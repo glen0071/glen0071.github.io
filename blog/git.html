@@ -11,14 +11,76 @@
   <h4>Today's Date</h4>
 
   <section>
+
+    <h3>What are the benefits of version control? How does git help you keep track of changes? Why use GitHub to store your code?</h3>
     <p>
-    Your first paragraph goes here. I'm using Web 2.0 Ipsum to add content. Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Nuvvo koofers oooooc voxy klout jaiku palantir flickr insala zinch napster oooj, airbnb mzinga vimeo yuntaa balihoo plickers whrrl edmodo appjet kippt. Yoono imvu hulu eduvant blekko imvu ebay voki napster skype, hipmunk zinch wesabe bubbli ning meebo bitly zlio. Fleck elgg ideeli disqus rovio zillow sifteo blyve jabber, bitly geni zoho foodzie qeyno twones klout jiglu, hipmunk jaiku balihoo plickers heekya eskobo yuntaa. Sococo whrrl plickers movity whrrl zinch voki nuvvo meebo, quora heroku unigo kno wufoo jibjab woopra, groupon yuntaa spock mzinga jumo meebo movity.
+      Oh crap, I was trying to add some changes that were suggested by my coworkers
+      in Bangladesh, Brazil, and Turkey. But, now I can't find the documents that
+      they sent me. They are gone forever!
+    </p>
+    <img src="http://now.avg.com/wp-content/uploads/2015/04/frustrated_pc-618x336.jpg">
+
+    <p>
+      You should really use a <a href="https://en.wikipedia.org/wiki/Version_control">Version Control System</a> for projects like this.
+      The most popular exmample of it is <a href="https://en.wikipedia.org/wiki/Git_(software)">Git</a>. We use it all the time in software
+      development. It's a life saver! You first have to memorize a few odd phrases in
+      order to use it in your computer's command line, but once you get the hang of
+      it, you'll want to use it everywhere!
     </p>
     <p>
-     Lijit groupon ning stypi eskobo blyve ning shopify oooooc, meebo groupon prezi ebay voxy bitly diigo. Spock ifttt skype hipmunk movity whrrl bebo oooj empressr, disqus insala palantir bitly dropio zimbra zinch oooooc etsy, klout spock insala quora omgpop trulia jibjab. Sifteo dogster ebay grockit geni scribd bitly ning unigo, plickers voki mzinga tumblr kaboodle mozy whrrl woopra udemy, foodzie joukuu elgg twitter shopify akismet rovio. Kosmix eduvant woopra dopplr balihoo ning bebo akismet, boxbe vimeo kosmix shopify zappos bitly geni loopt, qeyno disqus sococo squidoo wikia octopart.
+      I use it all the time cooking!  I start the recipe on what I call the
+      [master branch].
     </p>
     <p>
-     Kazaa meevee eduvant gsnap movity kosmix kazaa klout jumo, trulia unigo groupon wakoopa spock knewton glogster heroku oooj, ning imvu appjet eskobo zillow twitter rovio. Glogster chegg voxy greplin dopplr voki foodzie xobni weebly odeo, sococo zynga knewton loopt palantir lala blyve tumblr blekko, twones akismet plaxo kippt meebo zillow zooomr insala. Oovoo imeem napster divvyshot zinch imeem voxy shopify, fleck kazaa zinch lanyrd boxbe joost wakoopa nuvvo, orkut elgg heekya sifteo scribd napster. Yammer yoono groupon dopplr cloudera nuvvo eduvant klout, voxy groupon disqus eduvant oooj greplin.
+      Then, when I want to experiment with some new flavors, I can make
+      additional branches to toy with by pressing [git checkout -b new-branch-name]
+    </p>
+
+    <p>
+      In the pic, you can see that I created a directory called cookieFest, and
+      then entered [git branch] into my command line to display a list of all
+      the branches I made, experimenting with different flavors.
+    </p>
+
+    <img src="assets/yummy.png">
+
+    <p>
+      And the master branch won't be affected by any of these branches until
+      I decide to merge them together. When I want to save my progress along the
+      way, I press [git add .] and then [git commit -m
+      'message']. in the 'message', I include whatever is I did in that step,
+      ususally with something like, 'add beets' or 'fry spaghetti'
+      kind of like I'm writing a recipe along the way, and it creates a record
+      of every step I made, and exactly what the recipe tasted like at that time.
+
+      Then, later on, I can 'checkout' those earlier 'commits', and git will
+      show me exactly what the recipe was like at that time. I sometimes use that
+      to see if I liked the taste better before some changes were added.
+
+      Also, if I want to mix my branch with the master branch (which git users
+      call 'mergin'), I press [git checkout master] and then [git merge origin
+      branch-name]. Then all the changes in my branch are added into the master
+      branch, and git will warn me if there are 'conflicts' along the way.
+    </p>
+    <p>
+      Lastly, when I finish the recipe, I  just press [git branch -d
+      branch-name] with every branch that I no longer need, and it's out of the
+      way forever! My guests won't have to eat a bunch of spinach cookies leftover
+      from my experiments. I don't even have to do the dishes for all those
+      extra branches!
+    </p>
+    <p>
+      Another cool perk is that I can post my recipe on Github.com for other
+      chefs to look at and experiment with. If they see something that they
+      want to experiment with, they can 'clone' my recipe (although, recipes
+      posted there are technically called 'repositories'). That'll create a copy
+      of my recipe for them to play with. I don't have to do any work to share
+      it.
+    </p>
+    <p>
+      Sometimes, they will want to share their experiment with me, so they will
+      send me a 'pull request'. If I like their changes I can 'merge' them into
+      my recipe, and all their delicious ideas are included in my recipe too!
     </p>
   </section>
 </main>
