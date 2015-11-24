@@ -1,0 +1,12 @@
+
+nav > ul {
+  list-style-type: none;
+}
+
+ul#social-links-ul {
+  list-style-type: none;
+}
+
+.social-link {
+  display: inline;
+}
