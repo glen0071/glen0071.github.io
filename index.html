@@ -2,37 +2,28 @@
 <html>
 <head>
   <title>Eddie</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
 </head>
   <body>
     <header>
-      <div class="image">
-        <img src="bookshelf.jpg" class="bookshelf-image" alt="bookshelf background image">
-        <div class="image-opacity">
-          <div id="top-left-logo">
-            <img src="heart.png" alt="heart icon" class="heart-icon" height="100" width="100">
-          </div>
-          <nav><ul>
-            <li class="header-nav-li"><a class="header-links" href="http://glen0071.github.io/index.html">Home</a></li>
-            <li class="header-nav-li"><a class="header-links" href="http://glen0071.github.io/blog/blog-index.html">Blog</a></li>
-            <li class="header-nav-li"><a class="header-links" href="#">About</a></li>
-          </ul></nav>
-        </div>
-      </div>
+      <nav>
+        <span class="header-nav-li"><a class="home-link header-links" href="index.html">Home</a></span>
+        <span class="header-nav-li"><a class="about-link header-links" href="about.html">About</a></span>
+        <span class="header-nav-li"><a class="blog-link header-links" href="blog/blog-index.html">Blog</a></span>
+      </nav>
     </header>
-      <div id="hero"></div>
-      <div class="welcome-message">
-        <h4>I am just getting started in building this site, but come back soon to find something interesting.</h4>
-        <h4>Thanks!</h4>
-      </div>
-
-      <div id="blog-sample-window">
-        <div id="blog-sample-text"></div>
-        <div id="blog-sample-img">
-          <!-- <img src="#" alt="blog sampel image"> -->
-        </div>
-      </div>
-
+    <main>
+      <section class="welcome-message welcome">
+          <h4>Welcome</h4>
+      </section>
+      <a href="about.html"><section class="welcome-message about">
+          <h4>My name is Eddie</h4>
+      </section></a>
+      <a href="blog/blog-index.html"><section class="welcome-message blog">
+          <h4>I build and design <span class="sport">for fun and sport</span></h4>
+      </section></a>
+    </main>
     <footer>
       <div id="social">
         <ul>
@@ -45,8 +36,7 @@
 
       <div class="farewell">
         <p>
-          Thanks for stopping by! |
-          <a href="mailto:glen0071@gmail.com?Subject=Hello%20from%20your%20website" class="contact-btn">Contact Me</a>
+          <a href="mailto:glen0071@gmail.com?Subject=Hello%20from%20your%20website" class="contact-btn">Click here to email me</a>
         </p>
       </div>
     </footer>

@@ -1,12 +1,97 @@
+/* entire doc */
 
-nav > ul {
-  list-style-type: none;
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
 }
 
-ul#social-links-ul {
-  list-style-type: none;
+a {
+  text-decoration: none;
 }
 
-.social-link {
+/* header */
+
+header {
+  width: auto;
+  height: 70px;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: rgba(53, 210, 255, 1);
+  margin: -10px -10px 0 -10px;
+}
+
+.header-links {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.header-nav-li {
   display: inline;
+  padding: 0px 10px;
+}
+
+.home-link {
+  position: fixed;
+  top: 15px;
+  left: 10%;
+}
+
+.about-link {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+}
+
+.blog-link {
+  position: fixed;
+  top: 15px;
+  left: 85%;
+}
+
+/*  main */
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 50%;
+  height: 50%;
+  opacity: .5;
+  float: right;
+}
+
+/* footer */
+
+footer {
+  background-color: rgba(53, 210, 255, 1);
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 101%;
+  margin: 0px -10px;
+}
+
+#social-links-ul {
+  list-style-type: none;
+}
+
+.social-links-ul {
+  display: inline;
+}
+
+footer a {
+  color: white;
+}
+
+.farewell {
+  position: absolute;
+  bottom: 3px;
+  right: 15px;
+}
+
+.contact-btn {
+  text-decoration: underline;
 }

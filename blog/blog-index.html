@@ -2,21 +2,24 @@
 <html>
 <head>
   <title>Eddie</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 </head>
   <body>
     <header>
       <div id="top-left-logo"></div>
-      <nav><ul>
-        <li><a href="http://glen0071.github.io/index.html">Home</a></li>
-        <li><a href="http://glen0071.github.io/blog/blog-index.html">Blog</a></li>
-        <li><a href="http://glen0071.github.io/about.html">About</a></li>
-      </ul></nav>
+      <nav>
+        <span class="header-nav-li"><a class="home-link header-links" href="../index.html">Home</a></span>
+        <span class="header-nav-li"><a class="about-link header-links" href="../about.html">About</a></span>
+        <span class="header-nav-li"><a class="blog-link header-links" href="blog/blog-index.html">Blog</a></span>
+      </nav>
     </header>
     <main>
+
       <div id="blog-list">
         <ul>
-          <li>Blog Post Number One<a href="http://glen0071.github.io/blog/git.html">Git Revie and Reflections</a>
+          <li>Blog Post Number One <a href="http://glen0071.github.io/blog/git.html">Git Review and Reflections</a>
           <span id="post-summary">My first blog post, reflecting on what I've learned at Dev Bootcamp. The earliest lesson focus on git and github. I have been using these tools for a year or two now, but DBC's lessons offered a welcome refresher.</span>
         </li>
           <li><a href="#">
@@ -33,18 +36,17 @@
 
     <footer>
       <div id="social">
-        <ul id="social-links-ul">
-          <li class="social-link"><a href="https://www.linkedin.com/in/hedwardglenn">LinkedIn</a></li>
-          <li><a href="https://github.com/glen0071">Github</a></li>
-          <li><a href="https://twitter.com/EddieGdotme">Twitter</a></li>
-          <li><a href="https://www.facebook.com/eddie.glenn.58">Facebook</a></li>
+        <ul>
+          <li class="social-links-ul"><a href="https://www.linkedin.com/in/hedwardglenn">LinkedIn</a></li>
+          <li class="social-links-ul"><a href="https://github.com/glen0071">Github</a></li>
+          <li class="social-links-ul"><a href="https://twitter.com/EddieGdotme">Twitter</a></li>
+          <li class="social-links-ul"><a href="https://www.facebook.com/eddie.glenn.58">Facebook</a></li>
         </ul>
       </div>
 
-      <div>
+      <div class="farewell">
         <p>
-          Thanks for stopping by! |
-          <a href="mailto:glen0071@gmail.com?Subject=Hello%20from%20your%20website" id="contact-modal">Click here to contact me!</a>
+          <a href="mailto:glen0071@gmail.com?Subject=Hello%20from%20your%20website" id="contact-modal">Click here to email me!</a>
         </p>
       </div>
     </footer>
