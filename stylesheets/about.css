@@ -2,32 +2,32 @@
 
 body {
   background-color: rgb(255, 255, 255);
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;  
+}
+
+html {
+  margin-bottom: 80px;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* header */
 
 header {
-  width: 110%;
+  width: auto;
   height: 70px;
   color: white;
-  text-align: right;
-  font-family: sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   background-color: rgba(53, 210, 255, 1);
   margin: -10px -10px 0 -10px;
 }
 
 .header-links {
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 500;
-}
-
-nav > ul {
-  list-style-type: none;
-  position: fixed;
-  right: 10px;
-  /*top: 5px;*/
 }
 
 .header-nav-li {
@@ -35,19 +35,80 @@ nav > ul {
   padding: 0px 10px;
 }
 
+.home-link {
+  position: fixed;
+  top: 15px;
+  left: 10%;
+}
+
+.about-link {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+}
+
+.blog-link {
+  position: fixed;
+  top: 15px;
+  left: 85%;
+}
+
 /*  main */
 
-main {
-  width: 80%;
-  margin: 0 auto;
+.desk-img, .window-img {
+  height: 600px;
+  width: auto;
+  margin: 15px;
 }
 
-.hero {
-  width: 50%;
-  height: 50%;
-  opacity: .5;
+.desk-img {
+  float: right;
+}
+
+.window-img {
   float: left;
 }
+
+.about-sec {
+  position: relative;
+  height: 650px;
+  width: 800px;
+}
+
+.about-sec-1 {
+  
+  float: right;
+}
+
+.about-sec-2 {
+  
+  float: left;
+}
+
+.basic-me-text {
+  border: 3px solid rgba(53, 210, 255, 1);
+  height: auto;
+  width: 200px;
+  text-align: center;
+  font-size: 25px;
+  float: left;
+  position: relative;
+  top: 400px;
+  left: 80px;
+}
+
+.window-text {
+  border: 3px solid rgba(53, 210, 255, 1);
+  height: auto;
+  width: 200px;
+  text-align: center;
+  font-size: 25px;
+  float: right;
+  position: relative;
+  top: 400px;
+  right: 0;
+}
+
 
 /* footer */
 
@@ -57,7 +118,8 @@ footer {
   position: fixed;
   bottom: 0px;
   width: 101%;
-  margin: 0px -10px;
+  margin: 10px -10px 0px -10px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #social-links-ul {
@@ -75,9 +137,6 @@ footer a {
 .farewell {
   position: absolute;
   bottom: 3px;
-  right: 15px;
+  right: 50px;
 }
 
-.contact-btn {
-  text-decoration: underline;
-}

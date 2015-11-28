@@ -2,37 +2,51 @@
 
 body {
   background-color: rgb(255, 255, 255);
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* header */
 
 header {
-  width: 110%;
+  width: auto;
   height: 70px;
   color: white;
-  text-align: right;
-  font-family: sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   background-color: rgba(53, 210, 255, 1);
   margin: -10px -10px 0 -10px;
 }
 
 .header-links {
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 500;
-}
-
-nav > ul {
-  list-style-type: none;
-  position: fixed;
-  right: 10px;
-  /*top: 5px;*/
 }
 
 .header-nav-li {
   display: inline;
   padding: 0px 10px;
+}
+
+.home-link {
+  position: fixed;
+  top: 15px;
+  left: 10%;
+}
+
+.about-link {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+}
+
+.blog-link {
+  position: fixed;
+  top: 15px;
+  left: 85%;
 }
 
 /*  main */
