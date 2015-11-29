@@ -1,12 +1,10 @@
-/* entire doc */
+/* ------------------------------------ */
+/*              entire doc              */
+/* ------------------------------------ */
 
 body {
   background-color: rgb(255, 255, 255);
   font-family: 'Roboto', sans-serif;
-}
-
-html {
-  margin-bottom: 80px;
 }
 
 a {
@@ -53,64 +51,43 @@ header {
   left: 85%;
 }
 
-/*  main */
+/* ------------------------------------ */
+/*               main                   */
+/* ------------------------------------ */
 
-.desk-img, .window-img {
-  height: 600px;
-  width: auto;
-  margin: 15px;
+main {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.desk-img {
-  float: right;
+td {
+  border: 1px solid black;
 }
 
-.window-img {
-  float: left;
-}
-
-.about-sec {
-  position: relative;
-  height: 650px;
-  width: 800px;
-}
-
-.about-sec-1 {
-
-  float: right;
-}
-
-.about-sec-2 {
-
-  float: left;
-}
-
-.basic-me-text {
-  border: 3px solid rgba(53, 210, 255, 1);
+.bake-step {
+  width: 100px;
   height: auto;
-  width: 200px;
-  text-align: center;
-  font-size: 25px;
-  float: left;
-  position: relative;
-  top: 400px;
-  left: 80px;
 }
 
-.window-text {
-  border: 3px solid rgba(53, 210, 255, 1);
+.bake-issue {
+  width: 200px;
   height: auto;
+}
+
+.git-command {
+  width: 400px;
+  height: auto;
+}
+
+.bake-result {
   width: 200px;
-  text-align: center;
-  font-size: 25px;
-  float: right;
-  position: relative;
-  top: 400px;
-  right: 0;
+  height: auto;
 }
 
 
-/* footer */
+/* ------------------------------------ */
+/*               footer                 */
+/* ------------------------------------ */
 
 footer {
   background-color: rgba(53, 210, 255, 1);
@@ -118,8 +95,7 @@ footer {
   position: fixed;
   bottom: 0px;
   width: 101%;
-  margin: 10px -10px 0px -10px;
-  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0px -10px;
 }
 
 #social-links-ul {
@@ -137,5 +113,9 @@ footer a {
 .farewell {
   position: absolute;
   bottom: 3px;
-  right: 50px;
+  right: 15px;
+}
+
+.contact-btn {
+  text-decoration: underline;
 }
