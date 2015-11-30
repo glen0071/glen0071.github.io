@@ -1,21 +1,22 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <title>Your page title here</title>
+  <title>Git Cookies</title>
   <meta charset="UTF-8">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../stylesheets/git-blog.css">
 </head>
+<body>
 
-<main>
   <header>
     <nav>
-      <span class="header-nav-li"><a class="home-link header-links" href="index.html">Home</a></span>
-      <span class="header-nav-li"><a class="about-link header-links" href="about.html">About</a></span>
-      <span class="header-nav-li"><a class="blog-link header-links" href="blog/blog-index.html">Blog</a></span>
+      <span class="header-nav-li"><a class="home-link header-links" href="../index.html">Home</a></span>
+      <span class="header-nav-li"><a class="about-link header-links" href="../about.html">About</a></span>
+      <span class="header-nav-li"><a class="blog-link header-links" href="blog-index.html">Blog</a></span>
     </nav>
   </header>
-
+<main>
   <h1>First DBC Post</h1>
   <h4>November 12, 2015</h4>
 
@@ -52,22 +53,22 @@
           I would also like to experiment a bit along the way without ruining the whole batch.
         </td>
         <td>
-          Git init
+          <img src="blog-assets/git_init.png" alt="terminal window display git init">
         </td>
         <td>
-          Creates a “repository” of the recipe or project.
+          This will "initialize" a “repository” of the recipe or project.
           Every time I “commit changes”, a snapshot of the project’s current state will be saved.
         </td>
       </tr>
       <tr>
         <td>
-          Step one: Whisk flour, baking soda, and salt together. 
+          Step one: Whisk flour, baking soda, and salt together.
         </td>
         <td>
           I took my first important step in baking, and I want to save my progress so far.
         </td>
         <td>
-          Git add .
+          <img src="blog-assets/git_add.png" alt="terminal window display git add .">
         </td>
         <td>
           Git add . places all the ingredients on a table so I can take
@@ -83,19 +84,154 @@
           I took my first important step in baking, and I want to save my progress so far.
         </td>
         <td>
-          Git commit –m ‘whisk flour, baking soda, and salt’
+          <img src="blog-assets/git_commit.png" alt="terminal window display git commit">
         </td>
         <td>
           “Git commit” takes a
           snapshot, so I can return to this spot anytime in the future.
           The ‘-m whisk flour, baking soda, and salt’ adds a message or
           summary for that snapshot.
-          <!-- add jQuery note: The awkward grammar (using “whisk”
-          instead of “whisked”) is intentional. It is supposed to capture
-          what is accomplished when you “commit” those changes.  -->
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Step Two: Blend butter, milk, eggs, and sugar
+        </td>
+        <td>
+          Blended as advised by the directions.
+        </td>
+        <td>
+          <img src="blog-assets/second_add_commit.png" alt="terminal window display add . and commit">
+        </td>
+        <td>
+          Again, I placed all the ingredients on the table and then took a picture.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Oh crap!
+        </td>
+        <td>
+          I accidently added one cup of salt rather than one cup of sugar!
+        </td>
+        <td>
+          <img src="blog-assets/git_log.png" alt="terminal window display git log">
+        </td>
+        <td>
+          This will show me all the snapshots I’ve taken of my recipe (or all of the commits I’ve made)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          I want to return to when the project worked well at the whisk flower step.
+        </td>
+        <td>
+          I see want to return to when I whisk flower, etc.
+        </td>
+        <td>
+          <img src="blog-assets/git_reset.png" alt="terminal window display git reset">
+        </td>
+        <td>
+          Returns the recipe/project to the state it was at when I whisked the flour etc.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Step Two (more carefully this time)…
+        </td>
+        <td>
+          Blended as advised by the directions.
+        </td>
+        <td>
+          <img src="blog-assets/git_recommit.png" alt="terminal window display git add and commit">
+        </td>
+        <td>
+          Again, I placed all the ingredients on the table and then took a picture.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Time to experiment!
+        </td>
+        <td>
+          I want to try different flavors without ruining my first batch.
+        </td>
+        <td>
+          <img src="blog-assets/new_branch.png" alt="terminal window display creating new branch">
+        </td>
+        <td>
+          This creates another batch (or another “branch”).
+          I can create as many different branches as I want
+          and the “master branch” won’t be affected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          I’ve lost count of my branches!
+        </td>
+        <td>
+          I’ve created a ton of different branches, I can’t even remember what they were named.
+        </td>
+        <td>
+          <img src="blog-assets/more_branches.png" alt="terminal window display git branch">
+        </td>
+        <td>
+          This will show a list of all the branches that exist, and it will highlight the branch that I’m currently on.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          I want to mix my branch into the master branch
+        </td>
+        <td>
+          I love how my chocolate-chip-walnut branch turned out. I want to add all the changes from that branch into the master branch.
+        </td>
+        <td>
+          <img src="blog-assets/merge.png" alt="terminal window display git merge">
+        </td>
+        <td>
+          The git add . and git commit –m work the same as in earlier steps.
+          You just need to do that before you switch branches to make sure that
+          the changes are saved to that specific branch.
+
+          Git checkout moves me back to the master branch, and git merch
+          chocolate-chip-walnut incorporates all of the changes in that branch
+          into the current branch.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Delicious cookies! Time to clean up!
+        </td>
+        <td>
+          Cookies are all done. I need to do the dishes of all those extra branches I made.
+        </td>
+        <td>
+          <img src="blog-assets/branches_deleted.png" alt="terminal window display how to delete git branches">
+        </td>
+        <td>
+          When I’m sure I don’t need a branch, it’s smart to delete it to clean up.
         </td>
       </tr>
     </table>
 
   </section>
 </main>
+<footer>
+  <div id="social">
+    <ul>
+      <li class="social-links-ul"><a href="https://www.linkedin.com/in/hedwardglenn">LinkedIn</a></li>
+      <li class="social-links-ul"><a href="https://github.com/glen0071">Github</a></li>
+      <li class="social-links-ul"><a href="https://twitter.com/EddieGdotme">Twitter</a></li>
+      <li class="social-links-ul"><a href="https://www.facebook.com/eddie.glenn.58">Facebook</a></li>
+    </ul>
+  </div>
+
+  <div class="farewell">
+    <p>
+      <a href="mailto:glen0071@gmail.com?Subject=Hello%20from%20your%20website" id="contact-modal">Click here to email me</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

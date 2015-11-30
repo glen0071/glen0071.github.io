@@ -5,13 +5,16 @@
 body {
   background-color: rgb(255, 255, 255);
   font-family: 'Roboto', sans-serif;
+  position: relative;
 }
 
 a {
   text-decoration: none;
 }
 
-/* header */
+/* ------------------------------------ */
+/*              header                  */
+/* ------------------------------------ */
 
 header {
   width: auto;
@@ -34,19 +37,19 @@ header {
 }
 
 .home-link {
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 10%;
 }
 
 .about-link {
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 50%;
 }
 
 .blog-link {
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 85%;
 }
@@ -57,7 +60,8 @@ header {
 
 main {
   width: 80%;
-  margin: 0 auto;
+  height: auto;
+  margin: 0 auto 10px auto;
 }
 
 td {
@@ -92,10 +96,10 @@ td {
 footer {
   background-color: rgba(53, 210, 255, 1);
   color: white;
-  position: fixed;
-  bottom: 0px;
+  position: absolute;
+  bottom: -10px;
   width: 101%;
-  margin: 0px -10px;
+  margin: 10px -10px 0px -10px;
 }
 
 #social-links-ul {

@@ -32,19 +32,19 @@ header {
 }
 
 .home-link {
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 10%;
 }
 
 .about-link {
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 50%;
 }
 
 .blog-link {
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 85%;
 }
