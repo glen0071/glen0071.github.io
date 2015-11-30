@@ -2,7 +2,7 @@
 
 body {
   background-color: rgb(255, 255, 255);
-  font-family: 'Roboto', sans-serif;  
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -36,19 +36,19 @@ header {
 }
 
 .home-link {
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 10%;
 }
 
 .about-link {
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 50%;
 }
 
 .blog-link {
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 85%;
 }
@@ -76,12 +76,12 @@ header {
 }
 
 .about-sec-1 {
-  
+
   float: right;
 }
 
 .about-sec-2 {
-  
+
   float: left;
 }
 
@@ -139,4 +139,3 @@ footer a {
   bottom: 3px;
   right: 50px;
 }
-

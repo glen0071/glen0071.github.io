@@ -1,92 +1,237 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <title>Your page title here</title>
+  <title>Git Cookies</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/git-blog.css">
 </head>
+<body>
 
-<main>
   <header>
-    <div id="top-left-logo"></div>
-    <nav><ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="index.html">Blog</a></li>
-      <li><a href="../about.html">About</a></li>
-    </ul></nav>
+    <nav>
+      <span class="header-nav-li"><a class="home-link header-links" href="../index.html">Home</a></span>
+      <span class="header-nav-li"><a class="about-link header-links" href="../about.html">About</a></span>
+      <span class="header-nav-li"><a class="blog-link header-links" href="blog-index.html">Blog</a></span>
+    </nav>
   </header>
-
+<main>
   <h1>First DBC Post</h1>
   <h4>November 12, 2015</h4>
 
   <section>
 
     <h3>What are the benefits of version control? How does git help you keep track of changes? Why use GitHub to store your code?</h3>
-    <p>
-      Oh crap, I was trying to add some changes that were suggested by my coworkers
-      in Bangladesh, Brazil, and Turkey. But, now I can't find the documents that
-      they sent me. They are gone forever!
-    </p>
-    <img src="http://now.avg.com/wp-content/uploads/2015/04/frustrated_pc-618x336.jpg">
 
     <p>
-      You should really use a <a href="https://en.wikipedia.org/wiki/Version_control">Version Control System</a> for projects like this.
-      The most popular exmample of it is <a href="https://en.wikipedia.org/wiki/Git_(software)">Git</a>. We use it all the time in software
-      development. It's a life saver! You first have to memorize a few odd phrases in
-      order to use it in your computer's command line, but once you get the hang of
-      it, you'll want to use it everywhere!
-    </p>
-    <p>
-      I use it all the time cooking!  I start the recipe on what I call the
-      [master branch].
-    </p>
-    <p>
-      Then, when I want to experiment with some new flavors, I can make
-      additional branches to toy with by pressing [git checkout -b new-branch-name]
+      Version control maintains a record of changes within a codebase by taking snapshots of every "commit."
+      The most common example of these version control tools is Git. Git was first developed in 2005 by Linus
+      Torvalds to ease collaboration around development of the Linux Kernel. Much like everything else Mr.
+      Torvalds is involved with, Git is now available to all to use as a free software.
     </p>
 
     <p>
-      In the pic, you can see that I created a directory called cookieFest, and
-      then entered [git branch] into my command line to display a list of all
-      the branches I made, experimenting with different flavors.
+      GitHub is a website that offers many tools that enable users to take advantage of Git's most valuable
+      features while the repository is hosted online - which makes collaboration with other users even easier.
     </p>
 
-    <p>
-      And the master branch won't be affected by any of these branches until
-      I decide to merge them together. When I want to save my progress along the
-      way, I press [git add .] and then [git commit -m
-      'message']. in the 'message', I include whatever is I did in that step,
-      ususally with something like, 'add beets' or 'fry spaghetti'
-      kind of like I'm writing a recipe along the way, and it creates a record
-      of every step I made, and exactly what the recipe tasted like at that time.
+    <h3>A Git Tutorial - As applied to baking:</h3>
 
-      Then, later on, I can 'checkout' those earlier 'commits', and git will
-      show me exactly what the recipe was like at that time. I sometimes use that
-      to see if I liked the taste better before some changes were added.
+    <p>This is what baking cookies might look like if we could use Git version control...</p>
 
-      Also, if I want to mix my branch with the master branch (which git users
-      call 'mergin'), I press [git checkout master] and then [git merge origin
-      branch-name]. Then all the changes in my branch are added into the master
-      branch, and git will warn me if there are 'conflicts' along the way.
-    </p>
-    <p>
-      Lastly, when I finish the recipe, I  just press [git branch -d
-      branch-name] with every branch that I no longer need, and it's out of the
-      way forever! My guests won't have to eat a bunch of spinach cookies leftover
-      from my experiments. I don't even have to do the dishes for all those
-      extra branches!
-    </p>
-    <p>
-      Another cool perk is that I can post my recipe on Github.com for other
-      chefs to look at and experiment with. If they see something that they
-      want to experiment with, they can 'clone' my recipe (although, recipes
-      posted there are technically called 'repositories'). That'll create a copy
-      of my recipe for them to play with. I don't have to do any work to share
-      it.
-    </p>
-    <p>
-      Sometimes, they will want to share their experiment with me, so they will
-      send me a 'pull request'. If I like their changes I can 'merge' them into
-      my recipe, and all their delicious ideas are included in my recipe too!
-    </p>
+    <table>
+      <tr>
+        <th class="bake-step">Baking Step</th><th class="bake-issue">Issue</th><th class="git-command">Git Command</th><th class="bake-result">Result</th>
+      </tr>
+      <tr>
+        <td>
+          Start a new recipe
+        </td>
+        <td>
+          I am starting a new recipe and I'll likely make some mistakes along the way.
+          I would also like to experiment a bit along the way without ruining the whole batch.
+        </td>
+        <td>
+          <img src="blog-assets/git_init.png" alt="terminal window display git init">
+        </td>
+        <td>
+          This will "initialize" a “repository” of the recipe or project.
+          Every time I “commit changes”, a snapshot of the project’s current state will be saved.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Step one: Whisk flour, baking soda, and salt together.
+        </td>
+        <td>
+          I took my first important step in baking, and I want to save my progress so far.
+        </td>
+        <td>
+          <img src="blog-assets/git_add.png" alt="terminal window display git add .">
+        </td>
+        <td>
+          Git add . places all the ingredients on a table so I can take
+          a snapshot of their current state. In Git, this is called
+          placing the changes in a “staging area”.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Step one: Whisk flour, baking soda, and salt together.
+        </td>
+        <td>
+          I took my first important step in baking, and I want to save my progress so far.
+        </td>
+        <td>
+          <img src="blog-assets/git_commit.png" alt="terminal window display git commit">
+        </td>
+        <td>
+          “Git commit” takes a
+          snapshot, so I can return to this spot anytime in the future.
+          The ‘-m whisk flour, baking soda, and salt’ adds a message or
+          summary for that snapshot.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Step Two: Blend butter, milk, eggs, and sugar
+        </td>
+        <td>
+          Blended as advised by the directions.
+        </td>
+        <td>
+          <img src="blog-assets/second_add_commit.png" alt="terminal window display add . and commit">
+        </td>
+        <td>
+          Again, I placed all the ingredients on the table and then took a picture.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Oh crap!
+        </td>
+        <td>
+          I accidently added one cup of salt rather than one cup of sugar!
+        </td>
+        <td>
+          <img src="blog-assets/git_log.png" alt="terminal window display git log">
+        </td>
+        <td>
+          This will show me all the snapshots I’ve taken of my recipe (or all of the commits I’ve made)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          I want to return to when the project worked well at the whisk flower step.
+        </td>
+        <td>
+          I see want to return to when I whisk flower, etc.
+        </td>
+        <td>
+          <img src="blog-assets/git_reset.png" alt="terminal window display git reset">
+        </td>
+        <td>
+          Returns the recipe/project to the state it was at when I whisked the flour etc.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Step Two (more carefully this time)…
+        </td>
+        <td>
+          Blended as advised by the directions.
+        </td>
+        <td>
+          <img src="blog-assets/git_recommit.png" alt="terminal window display git add and commit">
+        </td>
+        <td>
+          Again, I placed all the ingredients on the table and then took a picture.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Time to experiment!
+        </td>
+        <td>
+          I want to try different flavors without ruining my first batch.
+        </td>
+        <td>
+          <img src="blog-assets/new_branch.png" alt="terminal window display creating new branch">
+        </td>
+        <td>
+          This creates another batch (or another “branch”).
+          I can create as many different branches as I want
+          and the “master branch” won’t be affected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          I’ve lost count of my branches!
+        </td>
+        <td>
+          I’ve created a ton of different branches, I can’t even remember what they were named.
+        </td>
+        <td>
+          <img src="blog-assets/more_branches.png" alt="terminal window display git branch">
+        </td>
+        <td>
+          This will show a list of all the branches that exist, and it will highlight the branch that I’m currently on.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          I want to mix my branch into the master branch
+        </td>
+        <td>
+          I love how my chocolate-chip-walnut branch turned out. I want to add all the changes from that branch into the master branch.
+        </td>
+        <td>
+          <img src="blog-assets/merge.png" alt="terminal window display git merge">
+        </td>
+        <td>
+          The git add . and git commit –m work the same as in earlier steps.
+          You just need to do that before you switch branches to make sure that
+          the changes are saved to that specific branch.
+
+          Git checkout moves me back to the master branch, and git merch
+          chocolate-chip-walnut incorporates all of the changes in that branch
+          into the current branch.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Delicious cookies! Time to clean up!
+        </td>
+        <td>
+          Cookies are all done. I need to do the dishes of all those extra branches I made.
+        </td>
+        <td>
+          <img src="blog-assets/branches_deleted.png" alt="terminal window display how to delete git branches">
+        </td>
+        <td>
+          When I’m sure I don’t need a branch, it’s smart to delete it to clean up.
+        </td>
+      </tr>
+    </table>
+
   </section>
 </main>
+<footer>
+  <div id="social">
+    <ul>
+      <li class="social-links-ul"><a href="https://www.linkedin.com/in/hedwardglenn">LinkedIn</a></li>
+      <li class="social-links-ul"><a href="https://github.com/glen0071">Github</a></li>
+      <li class="social-links-ul"><a href="https://twitter.com/EddieGdotme">Twitter</a></li>
+      <li class="social-links-ul"><a href="https://www.facebook.com/eddie.glenn.58">Facebook</a></li>
+    </ul>
+  </div>
+
+  <div class="farewell">
+    <p>
+      <a href="mailto:glen0071@gmail.com?Subject=Hello%20from%20your%20website" id="contact-modal">Click here to email me</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

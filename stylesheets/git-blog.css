@@ -1,15 +1,20 @@
-/* entire doc */
+/* ------------------------------------ */
+/*              entire doc              */
+/* ------------------------------------ */
 
 body {
   background-color: rgb(255, 255, 255);
   font-family: 'Roboto', sans-serif;
+  position: relative;
 }
 
 a {
   text-decoration: none;
 }
 
-/* header */
+/* ------------------------------------ */
+/*              header                  */
+/* ------------------------------------ */
 
 header {
   width: auto;
@@ -49,29 +54,52 @@ header {
   left: 85%;
 }
 
-/*  main */
+/* ------------------------------------ */
+/*               main                   */
+/* ------------------------------------ */
 
 main {
   width: 80%;
-  margin: 0 auto;
+  height: auto;
+  margin: 0 auto 10px auto;
 }
 
-.hero {
-  width: 50%;
-  height: 50%;
-  opacity: .5;
-  float: right;
+td {
+  border: 1px solid black;
 }
 
-/* footer */
+.bake-step {
+  width: 100px;
+  height: auto;
+}
+
+.bake-issue {
+  width: 200px;
+  height: auto;
+}
+
+.git-command {
+  width: 400px;
+  height: auto;
+}
+
+.bake-result {
+  width: 200px;
+  height: auto;
+}
+
+
+/* ------------------------------------ */
+/*               footer                 */
+/* ------------------------------------ */
 
 footer {
   background-color: rgba(53, 210, 255, 1);
   color: white;
-  position: fixed;
-  bottom: 0px;
+  position: absolute;
+  bottom: -10px;
   width: 101%;
-  margin: 0px -10px;
+  margin: 10px -10px 0px -10px;
 }
 
 #social-links-ul {
