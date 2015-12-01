@@ -58,8 +58,7 @@ header {
 /*               main                   */
 /* ------------------------------------ */
 
-main {
-  width: 80%;
+main {0%;
   height: auto;
   margin: 0 auto 10px auto;
 }
@@ -122,4 +121,12 @@ footer a {
 
 .contact-btn {
   text-decoration: underline;
+}
+
+@media screen {
+  .header-links {
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+  }
 }

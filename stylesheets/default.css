@@ -1,5 +1,6 @@
-/* entire doc */
-
+/* --------------------------- */
+/* ------- entire page ------- */
+/* --------------------------- */
 body {
   background-color: rgb(255, 255, 255);
   font-family: 'Open Sans Condensed', sans-serif;
@@ -58,7 +59,9 @@ header {
   left: 85%;
 }
 
-/* main */
+/* ---------------------- */
+/* --------- main ------- */
+/* ---------------------- */
 
 main {
   position: relative;
@@ -110,7 +113,9 @@ main {
   display: block;
 }
 
-/* footer */
+/* ---------------------- */
+/* ------- footer ------- */
+/* ---------------------- */
 
 footer {
   background-color: rgba(53, 210, 255, 1);
