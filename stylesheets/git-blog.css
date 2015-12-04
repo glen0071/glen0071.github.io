@@ -122,11 +122,3 @@ footer a {
 .contact-btn {
   text-decoration: underline;
 }
-
-@media screen {
-  .header-links {
-    color: white;
-    font-size: 50px;
-    font-weight: 500;
-  }
-}

@@ -1,4 +1,6 @@
-/* entire doc */
+/* ---------------------- */
+/* ----- entire doc ----- */
+/* ---------------------- */
 
 body {
   background-color: rgb(255, 255, 255);
@@ -9,11 +11,9 @@ a {
   text-decoration: none;
 }
 
-/* header */
-
-.dbc-subtitle {
-  
-}
+/* ----------------------------- */
+/* ------------ header  -------- */
+/* ----------------------------- */
 
 header {
   width: auto;
@@ -53,11 +53,35 @@ header {
   left: 85%;
 }
 
-/*  main */
+/* ----------------------------- */
+/* ------------ main  ---------- */
+/* ----------------------------- */
 
 main {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+}
+
+.blog-post-ul {
+  list-style-type: none;
+}
+
+.one-post-li {
+  margin-bottom: 10px;
+}
+
+.post-title-link {
+  display: block;
+  font-size: 1.8em;
+  text-indent: 10px;
+  margin: 5px; 0;
+}
+
+.post-summary {
+  padding-left: 40px;
+}
+
+.post-number {
 }
 
 /* footer */

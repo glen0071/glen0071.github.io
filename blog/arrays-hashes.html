@@ -19,7 +19,7 @@
 <main>
   <h2 class="main-title">Arrays and Hashes</h2>
   <h5 class="dbc-subtitle"><em>~ Written as part of my coursework at Dev Bootcamp ~</em></h5>
-  <h4>November 30, 2015</h4>
+  <h4>December 30, 2015</h4>
 
   <article>
     <!-- <img src="image.png" alt=""> -->
@@ -30,19 +30,32 @@
         An Array is a data structure. It eases the manipulation of data within a pogram.
         The data in an array is stored by index.
       </p>
+      <p>
+        An array can be declared like this: <code>array =[1, 2, 3, 'four', 'five', 'six']</code>
+      </p>
+      <p>
+        Since the data is arranged by index, you can access the elements with calling the index position within brackets: <code>array[0]</code> would access the first element in the array. <code>array[2]</code> would access the third eleemnt. A negative index can be used to access elements starting from the end.
+      </p>
     </section>
 
     <section>
       <h3>Ruby Hashes</h3>
       <p>
         A Hash is also a data structure. It also eases the manipulation of data within a pogram.
-        The data in a hash is stored by index.
+        The data in a hash is stored by an index of integers. The index begins at 0.
+      </p>
+      <p>
+        A Hash can be created much like an Array, declaring it like so: <code>hash = { :apples => 10, :oranges => 8, :pears => 9}</code>.
+      </p>
+      <p>
+        The elements within a hash are not organized by index or anything else that would allow accessing them by position. However, the elements within a hash include key value pairs, so the elements can be accessed by calling upon the keys: <code>hash[:apples]</code>.
       </p>
     </section>
-
-
-
-
+    <section>
+      <p>
+        Both hashes and arrays each have many methods that allow developers to transform the data within arrays and hashes, no matter how large the arrays or hashes may be, and for all different forms of data that may be contained.
+      </p>
+    </section>
   </article>
 
 </main>
@@ -64,26 +77,3 @@
 </footer>
 </body>
 </html>
-
-
-<!--
-
-How was it to wireframe and create an HTML page with a pair?
-
-- It was nice creating a wireframe with a pair. After doing the first pairing session and the GPS, this challenge was much shorter and simply than the others. Pairing is more valuable on more challenging lessons.
-
-It was valuable to have a pair there to talk through the purpose behind some of the design decisions that we were making.
-
-Did you find wireframing to be helpful to your development process?
-
-- I find wireframing more valuable in a more complex website. The Template was so simple that I'm not sure if taking an extra step to wireframe was helpful in improving the page itself.
-
-What did you and your pair decide made a good wireframe?
-
-We didn't spend a lot of time on this specific question, but I guess the implication of our work and process was that we started by adding the most common and necessary elements of an HTML page (like head, title, header, footer, etc.). Then, we added more and more elements until all of the "universal" elements were included.
-
-What new semantic elements did you learn about (if any)?
-
-My pair pointed out how the article tag could be used. I wasn't familiar with that one.
-
- -->
