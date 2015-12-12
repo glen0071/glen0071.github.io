@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Title</title>
+  <title>Map, the Number One Enumerable Method</title>
   <meta charset="UTF-8">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -17,47 +17,62 @@
     </nav>
   </header>
 <main>
-  <h2>Enumerable Methods</h2>
+  <h2>Map, the Number One Enumerable Method</h2>
   <h5 class="dbc-subtitle"><em>~ Written as part of my coursework at Dev Bootcamp ~</em></h5>
   <h4>December 11, 2015</h4>
 
   <article>
-    The Enumerable module brings many useful methods to Ruby. One of the most widely used is <code>map</code>.
+    <p>The Enumerable module brings many useful methods to Ruby. One of the most widely used is <code>map</code>.</p>
 
-    The <code>map</code> function has a twin named <code>collect</code> which performs the same function. However, the keyword <code>map</code> is conventionally used most often so that's the one that I'll focus on.
+    <p>
+      The <code>map</code> function has a twin named <code>collect</code> which performs the same function. However, the keyword <code>map</code> is conventionally used most often so that's the one that I'll focus on.
+    </p>
 
-    When map is run on a hash or array, it will run a block of code on every element and automagically insert the results of running that code into an array. If you add the 'bang' (!) symbol at the end (so <code>map</code> becomes <code>map!</code>), it even transforms the original array or hash.
+    <p>
+      When map is run on a hash or array, it will run a block of code on every element and automagically insert the results of running that code into an array. If you add the 'bang' (!) symbol at the end (so <code>map</code> becomes <code>map!</code>), it even transforms the original array or hash.
+    </p>
 
-    One could actually acheive a similar feet with the simpler method of <code>each</code>, but it's more work and less elegant. For example, if running <code>each</code> to turn an array of integers into strings, one must first create a new or temporary array, run the <code>to_s</code> method on each element to convert it, then insert that converted element into the temporary array, and finally return the temporary array. It would probably look something like this:
+    <p>
+      One could actually acheive a similar feet with the simpler method of <code>each</code>, but it's more work and less elegant. For example, if running <code>each</code> to turn an array of integers into strings, one must first create a new or temporary array, run the <code>to_s</code> method on each element to convert it, then insert that converted element into the temporary array, and finally return the temporary array. It would probably look something like this:
+    </p>
 
-    <code>
-      num = [1, 2, '3', 4, '5', '6']
-      puts "Before method is run: " + num.inspect
-      temp_array = []
-      num.each {|number|
-            int = number.to_i
-            temp_array << int
-      }
-      puts "After method is run: " +  temp_array.inspect
-    </code>
+    <p>
+      <code>
+        num = [1, 2, '3', 4, '5', '6']
+        puts "Before method is run: " + num.inspect
+        temp_array = []
+        num.each {|number|
+              int = number.to_i
+              temp_array << int
+        }
+        puts "After method is run: " +  temp_array.inspect
+      </code>
+    </p>
 
-    Result:
-    <code>
-      Before method is run: [1, 2, '3', 4, '5', '6']
-      After method is run: [1, 2, 3, 4, 5, 6]
-    </code>
+    <p>
+      Result: <br>
+      <code>
+        Before method is run: [1, 2, '3', 4, '5', '6']
+        After method is run: [1, 2, 3, 4, 5, 6]
+      </code>
+    </p>
 
-    We can use map to accomplish the same feet, with the exact same output, and cut out a few lines of code along the way:
+    <p>
+      We can use map to accomplish the same feet, with the exact same output, and cut out a few lines of code along the way:
+    </p>
 
-    <code>
-      num = [1, 2, '3', 4, '5', '6']
-      puts "Before method is run: " + num.inspect
-      array = num.map {|number| number.to_i}
-      puts "Before method is run: " + array.inspect
-    </code>
 
-      Cutting out a few lines of code is always a nice way to end a blog post.
-      
+    <p>
+      <code>
+        num = [1, 2, '3', 4, '5', '6']
+        puts "Before method is run: " + num.inspect
+        array = num.map {|number| number.to_i}
+        puts "Before method is run: " + array.inspect
+      </code>
+    </p>
+
+    <p>Cutting out a few lines of code is always a nice way to end a blog post.</p>
+
   </article>
 
 </main>
