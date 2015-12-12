@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title</title>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <span class="header-nav-li"><a class="home-link header-links" href="../index.html">Home</a></span>
+      <span class="header-nav-li"><a class="about-link header-links" href="../about.html">About</a></span>
+      <span class="header-nav-li"><a class="blog-link header-links" href="blog-index.html">Blog</a></span>
+    </nav>
+  </header>
+<main>
+  <h2>Enumerable Methods</h2>
+  <h5 class="dbc-subtitle"><em>~ Written as part of my coursework at Dev Bootcamp ~</em></h5>
+  <h4>December 11, 2015</h4>
+
+  <article>
+    The Enumerable module brings many useful methods to Ruby. One of the most widely used is <code>map</code>.
+
+    The <code>map</code> function has a twin named <code>collect</code> which performs the same function. However, the keyword <code>map</code> is conventionally used most often so that's the one that I'll focus on.
+
+    When map is run on a hash or array, it will run a block of code on every element and automagically insert the results of running that code into an array. If you add the 'bang' (!) symbol at the end (so <code>map</code> becomes <code>map!</code>), it even transforms the original array or hash.
+
+    One could actually acheive a similar feet with the simpler method of <code>each</code>, but it's more work and less elegant. For example, if running <code>each</code> to turn an array of integers into strings, one must first create a new or temporary array, run the <code>to_s</code> method on each element to convert it, then insert that converted element into the temporary array, and finally return the temporary array. It would probably look something like this:
+
+    <code>
+      num = [1, 2, '3', 4, '5', '6']
+      puts "Before method is run: " + num.inspect
+      temp_array = []
+      num.each {|number|
+            int = number.to_i
+            temp_array << int
+      }
+      puts "After method is run: " +  temp_array.inspect
+    </code>
+
+    Result:
+    <code>
+      Before method is run: [1, 2, '3', 4, '5', '6']
+      After method is run: [1, 2, 3, 4, 5, 6]
+    </code>
+
+    We can use map to accomplish the same feet, with the exact same output, and cut out a few lines of code along the way:
+
+    <code>
+      num = [1, 2, '3', 4, '5', '6']
+      puts "Before method is run: " + num.inspect
+      array = num.map {|number| number.to_i}
+      puts "Before method is run: " + array.inspect
+    </code>
+
+      Cutting out a few lines of code is always a nice way to end a blog post.
+      
+  </article>
+
+</main>
+<footer>
+  <div id="social">
+    <ul>
+      <li class="social-links-ul"><a href="https://www.linkedin.com/in/hedwardglenn">LinkedIn</a></li>
+      <li class="social-links-ul"><a href="https://github.com/glen0071">Github</a></li>
+      <li class="social-links-ul"><a href="https://twitter.com/EddieGdotme">Twitter</a></li>
+      <li class="social-links-ul"><a href="https://www.facebook.com/eddie.glenn.58">Facebook</a></li>
+    </ul>
+  </div>
+
+  <div class="farewell">
+    <p>
+      <a href="mailto:glen0071@gmail.com?Subject=Hello%20from%20your%20website" id="contact-modal">Click here to email me</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
