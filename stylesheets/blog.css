@@ -81,28 +81,6 @@ main {
   padding-left: 40px;
 }
 
-.first-section {
-  clear: both;
-  display: block;
-  width: 100%;
-}
-
-p {
-  display: inline-block;
-  width: 300px;
-  float: left;
-}
-
-img {
-  float: right;
-}
-
-.top-right-pic {
-  height: 700px;
-  clear: both;
-  float: right;
-}
-
 /* footer */
 
 footer {
