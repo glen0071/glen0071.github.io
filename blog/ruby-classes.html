@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby Classes</title>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <style>
+    code {
+      font-weight: bold;
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <span class="header-nav-li"><a class="home-link header-links" href="../index.html">Home</a></span>
+      <span class="header-nav-li"><a class="about-link header-links" href="../about.html">About</a></span>
+      <span class="header-nav-li"><a class="blog-link header-links" href="blog-index.html">Blog</a></span>
+    </nav>
+  </header>
+<main>
+  <h2>Rappers: A Dumb Analogy for Understanding Ruby Classes</h2>
+  <h5 class="dbc-subtitle"><em>~ Written as part of my coursework at Dev Bootcamp ~</em></h5>
+  <h4>December 20, 2015</h4>
+
+  <article>
+    <h3>Introducing the concept of a class</h3>
+    <section>
+      <p>
+        First and foremost, <span class="bold-text">classes help a programmer to organize his or her code.</span>
+        On a more abstract level, classes are one of the defining features of
+        object oriented programming, so I find it easier to explain what a class
+        is by explaining its relationship to Object Oriented Programming in general.
+      </p>
+      <h4>Finding classes of objects in real life</h4>
+      <p>
+        In the real world, almost everything around us can be thought of as an object.
+        A chair is an object, a laptop is an object, a dog is an object. Thinking in these terms can
+        make it easier to understand the world: An animal is an object. A dog is an
+        object. A cat is an object. And these three objects are related in the sense
+        that cats and dogs are animals. That type of relationship is helpful for
+        us to consider when thinking about dogs and cats.
+      </p>
+      <p>
+        It also helps a person to program a big and complicated program if different
+        parts of the program can be broken up into different "objects", and those
+        objects can have clearly defined relationships. This brings us to the main
+        point of this article: Classes. Classes are used to clearly define those
+        relationships between different parts of a code.
+      </p>
+    </section>
+    <section>
+      <p>
+        Before this class concept is applied to the creation of a helpful program,
+        many programming books and tutorials first apply the concept to silly examples
+        from the real world. I will follow suit. Here I am going to create a
+        Rapper class.
+      </p>
+      <h4>Our silly rapper class</h4>
+      <p>
+        In the real world, some might see a "rapper" as a relatively broad category,
+        and there may be more specific kinds of rappers within that class such as
+        "gangster rapper", "commercial rapper", "underground rapper", etc. But, before
+        we get into those specifics, the first step is to create a rapper class like so:<br>
+        <pre>
+          <code>
+            class Rapper
+
+            end
+          </code>
+        </pre>
+        However, before a class can be  used throughout a program, it must be "initialized".
+        It's kind of like how a rapper, before his sick flows can be shared with the
+        rest of the world, he must be signed to a record deal. The initialize method
+        looks like this:
+        <pre>
+          <code>
+            def initialize(real_name)
+              if real_name == signed_to_major_label
+                @rapper = stage_name
+              else
+                broke_artist = real_name
+              end
+            end
+          </code>
+        </pre>
+        That code can be used to create a new instance variable which is simply an example
+        of that class. Then, the instance variable can be used throughout the program. Or,
+        getting back to our corny analogy, the rapper is free to tour across the nation.
+
+        In this example, I also threw in a <code>real_name</code> argument variable that
+        can accept a sring of the rappers real name, and then it can test whether that
+        rapper has been signed to a major label.
+      </p>
+      <p>
+        A class within a program may also include methods that can be used throughout that program.
+        Getting back to our analogy: <br>
+        <pre>
+          <code>
+            def spit_rhymes(words)
+              return rand(words) + "by #{rapper}"
+            end
+
+            def make_beats(record_samples)
+              return rand(record_samples) + "produced by #{rapper}"
+            end
+
+            def featured_on_slow_song(singer, song)
+                remix = song.map(verse) do |verse|
+                  verse << spit_rhymes
+                end
+              return remix + "featuring #{@rapper}"
+            end
+          </code>
+        </pre>
+        In the code above, three methods were created that each could be used inside of the Rapper class.
+        Typical of Ruby class methods, each of those methods includes an instance variable drawn from the
+        initialize method. Data can be created when one runs the initialize method: <br>
+        <pre>
+          <code>
+            drake = Rapper.new("Aubrey Graham")
+            meek_mill = Rapper.new("Robert Williams")
+          </code>
+        </pre>
+        You may notice that when the two lines above call the initialize method, the result is stored in a variable.
+        That way, the class methods can be called on that variable, and the program will understand
+        that it needs to use the instance variable that was created when the intialize method was first run. Code like this: <br>
+        <pre>
+          <code>drake.featured_on_slow_song("Joanna Newsom", "Sapokanikan")</code>
+        </pre>
+      </p>
+      <p>
+        Hopefully the use of a class is not lost on the analogy. But, classes are all about
+        these dynamic relationships between objects, methods, and the data that passes
+        between them.
+      </p>
+    </section>
+  </article>
+
+</main>
+<footer>
+  <div id="social">
+    <ul>
+      <li class="social-links-ul"><a href="https://www.linkedin.com/in/hedwardglenn">LinkedIn</a></li>
+      <li class="social-links-ul"><a href="https://github.com/glen0071">Github</a></li>
+      <li class="social-links-ul"><a href="https://twitter.com/EddieGdotme">Twitter</a></li>
+      <li class="social-links-ul"><a href="https://www.facebook.com/eddie.glenn.58">Facebook</a></li>
+    </ul>
+  </div>
+
+  <div class="farewell">
+    <p>
+      <a href="mailto:glen0071@gmail.com?Subject=Hello%20from%20your%20website" id="contact-modal">Click here to email me</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

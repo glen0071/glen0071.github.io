@@ -81,6 +81,10 @@ main {
   padding-left: 40px;
 }
 
+span.bold-text {
+  font-weight: bold;
+}
+
 /* footer */
 
 footer {

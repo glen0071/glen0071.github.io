@@ -60,26 +60,89 @@ header {
 /*     main         */
 /*                  */
 
+section {
+  display: block;
+  max-width: 600px;
+  height: auto;
+  margin: 0px auto;
+  clear: both;
+}
 
+.about-more-image {
+  max-height: 300px;
+  max-width: 300px;
+  display: inline;
+}
+
+.text-p {
+  display: inline-block;
+  height: 100px;
+  width: 300px;
+}
+
+.img-left {
+  float: left;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.img-right {
+  float: right;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.text-right {
+  float: right;
+  margin-right: auto;
+}
+
+.text-left {
+  float: left;
+  margin-left: auto;
+}
+
+.logos-container {
+  text-align: center;
+}
+
+section.logos-container {
+  width: 1000px;
+}
+
+.logos-div {
+  float: left;
+  margin-left: auto;
+  margin-right: 0px;
+  display: inline-block;
+}
+
+.logos {
+  display: inline-block;
+  margin: 0;
+  height: 150px;
+}
+
+
+/*
 .about-sec {
   position: relative;
   height: 650px;
   width: 800px;
-}
+}*/
 
-.about-sec-1 {
+/*.about-sec-1 {
   float: right;
-}
+}*/
 
-.about-sec-3 {
+/*.about-sec-3 {
   clear: both;
   background-color: blue;
-}
+}*/
 
-.about-sec-2 {
-
+/*.about-sec-2 {
   float: left;
-}
+}*/
 
 
 /*                  */
@@ -87,31 +150,34 @@ header {
 /*                  */
 
 
-.desk-img, .window-img {
+
+
+
+/*.desk-img, .window-img {
   height: 600px;
   width: auto;
   margin: 15px;
-}
+}*/
 
-.how-img {
+/*.how-img {
   height: 300px;
   width: auto;
   margin: 15px;
-}
+}*/
 
-.desk-img {
+/*.desk-img {
   float: right;
-}
+}*/
 
-.window-img {
+/*.window-img {
   float: left;
-}
+}*/
 
 /*                  */
 /*     main text    */
 /*                  */
 
-.basic-me-text {
+/*.basic-me-text {
   border: 3px solid rgba(53, 210, 255, 1);
   height: auto;
   width: 200px;
@@ -121,9 +187,9 @@ header {
   position: relative;
   top: 400px;
   left: 80px;
-}
+}*/
 
-.window-text {
+/*.window-text {
   border: 3px solid rgba(53, 210, 255, 1);
   height: auto;
   width: 200px;
@@ -133,10 +199,10 @@ header {
   position: relative;
   top: 400px;
   right: 0;
-}
+}*/
 
 
-.how-text {
+/*.how-text {
   border: 3px solid rgba(53, 210, 255, 1);
   height: auto;
   width: 500px;
@@ -145,20 +211,20 @@ header {
   float: right;
   position: relative;
   left: 100px;
-}
+}*/
 
-section.about-pro {
+/*section.about-pro {
   clear: both;
-}
+}*/
 
 /*                  */
 /*     asides       */
 /*                  */
 
 
-aside.podcasts {
+/*aside.podcasts {
   clear: both;
-}
+}*/
 
 
 /*                  */
