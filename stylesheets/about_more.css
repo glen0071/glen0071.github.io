@@ -60,12 +60,20 @@ header {
 /*     main         */
 /*                  */
 
+h4.instruct {
+  padding: 20px 40px;
+}
+
 section {
   display: block;
-  max-width: 600px;
-  height: auto;
+  max-width: 700px;
+  height: 350px;
   margin: 0px auto;
   clear: both;
+}
+
+section.dbc-sec {
+  height: 200px;
 }
 
 .about-more-image {
@@ -75,7 +83,7 @@ section {
 }
 
 .text-p {
-  display: inline-block;
+  display: none;
   height: 100px;
   width: 300px;
 }
@@ -90,6 +98,12 @@ section {
   float: right;
   margin-left: auto;
   margin-right: 0px;
+}
+
+.text-p {
+  border: 3px solid rgba(53, 210, 255, 1);
+  height: auto;
+  padding: 3px;
 }
 
 .text-right {
@@ -123,6 +137,17 @@ section.logos-container {
   height: 150px;
 }
 
+.text-right, .text-left {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.small-pic {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 /*
 .about-sec {
@@ -142,88 +167,6 @@ section.logos-container {
 
 /*.about-sec-2 {
   float: left;
-}*/
-
-
-/*                  */
-/*     main imgs    */
-/*                  */
-
-
-
-
-
-/*.desk-img, .window-img {
-  height: 600px;
-  width: auto;
-  margin: 15px;
-}*/
-
-/*.how-img {
-  height: 300px;
-  width: auto;
-  margin: 15px;
-}*/
-
-/*.desk-img {
-  float: right;
-}*/
-
-/*.window-img {
-  float: left;
-}*/
-
-/*                  */
-/*     main text    */
-/*                  */
-
-/*.basic-me-text {
-  border: 3px solid rgba(53, 210, 255, 1);
-  height: auto;
-  width: 200px;
-  text-align: center;
-  font-size: 25px;
-  float: left;
-  position: relative;
-  top: 400px;
-  left: 80px;
-}*/
-
-/*.window-text {
-  border: 3px solid rgba(53, 210, 255, 1);
-  height: auto;
-  width: 200px;
-  text-align: center;
-  font-size: 25px;
-  float: right;
-  position: relative;
-  top: 400px;
-  right: 0;
-}*/
-
-
-/*.how-text {
-  border: 3px solid rgba(53, 210, 255, 1);
-  height: auto;
-  width: 500px;
-  text-align: center;
-  font-size: 22px;
-  float: right;
-  position: relative;
-  left: 100px;
-}*/
-
-/*section.about-pro {
-  clear: both;
-}*/
-
-/*                  */
-/*     asides       */
-/*                  */
-
-
-/*aside.podcasts {
-  clear: both;
 }*/
 
 

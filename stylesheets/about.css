@@ -87,6 +87,7 @@ header {
 /*                  */
 
 
+
 .desk-img, .window-img {
   height: 600px;
   width: auto;
@@ -151,14 +152,24 @@ section.about-pro {
   clear: both;
 }
 
+
 /*                  */
 /*     asides       */
 /*                  */
 
-
-aside.podcasts {
+aside.audios {
   clear: both;
 }
+
+p.invite-more-about {
+  float: right;
+  padding-right: 30px;
+}
+
+p.invite-more-about a {
+  color: red;
+}
+
 
 
 /*                  */

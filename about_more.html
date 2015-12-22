@@ -6,6 +6,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="stylesheets/about_more.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -18,41 +19,45 @@
   </header>
   <main class="about">
 
+    <h4 class="instruct">You can point your cursor or touch one of the pics below to learn a bit more about me...</h4>
+
     <section>
-      <img src="imgs/mn2.jpg" class="about-more-image img-left" alt="Minnesota">
-      <p class="text-p text-right">
+      <img src="imgs/mn2.jpg" class="about-more-image img-left" alt="Minnesota" onmouseover="showText('text-1')">
+      <p class="text-p text-right" id="text-1">
         I grew up in Duluth, Minnesota, and then attended college and law school in the
         Twin Cities.
       </p>
     </section>
 
     <section>
-      <img src="imgs/il.jpg" class="about-more-image img-right" alt="Illinois">
-      <p class="text-p text-left">
+      <img src="imgs/il.jpg" class="about-more-image img-right" alt="Illinois" onmouseover="showText('text-2')">
+      <p class="text-p text-left" id="text-2">
         I came to Chicago in 2012 for a job at a non-profit.
       </p>
     </section>
 
     <section>
-      <img src="imgs/lawstuff.jpg" class="about-more-image img-left" alt="gavel and law books">
-      <p class="text-p text-right">
-        I did a mix of legal research, project management, process improvement, and a
-        lot of writing. It was a great experience working on very challenging projects
-        with people across the country.
+      <img src="imgs/lawstuff.jpg" class="about-more-image img-left" alt="gavel and law books" onmouseover="showText('text-3')">
+      <p class="text-p text-right" id="text-3">
+        I did a mix of legal research, project management, and process improvement.
+        It was a great experience working on very challenging projects
+        with people across the country, and I looked forward to doing similar work in my next job,
+        that was until I started programming...
       </p>
     </section>
     <section>
-      <img src="imgs/sinkapp.png" class="about-more-image img-right" alt="wrench">
-      <p class="text-p text-left">
-        I didn't plan on becoming a developer. I wanted to make my own apps. I
+      <img src="imgs/sinkapp.png" class="about-more-image img-right small-pic" alt="wrench pic in iphone" onmouseover="showText('text-4')">
+      <p class="text-p text-left" id="text-4">
+        In the beginning, I didn't plan on becoming a full-time developer.
+        I just wanted to make my own apps. I
         thought to myself, "I've unclogged sinks and replaced brake pads with
         Google searches and Youtube videos. I should be able to make an app.
         How hard can it be?"
       </p>
     </section>
     <section>
-      <img src="imgs/night.png" class="about-more-image img-left" alt="man on computer at night">
-      <p class="text-p text-right">
+      <img src="imgs/night.png" class="about-more-image img-left" alt="man on computer at night" onmouseover="showText('text-5')">
+      <p class="text-p text-right" id="text-5">
         Without any clear plans in mind, I started coding and quickly fell in
         love with it. I had already enjoyed creative writing, but developing software
         expressed a new form of creativity for me. So I spent countless hours alone
@@ -60,52 +65,51 @@
       </p>
     </section>
 
-    <section>
-      <img src="imgs/dbc-logo.png" class="about-more-image img-right" alt="reactjs logo">
-      <p class="text-p text-left">
+    <section class="dbc-sec">
+      <img src="imgs/dbc-logo.png" class="about-more-image img-right dbc-logo small-pic" alt="reactjs logo" onmouseover="showText('text-6')">
+      <p class="text-p text-left" id="text-6">
         Now, I'm at Dev Bootcamp, weaving together the strands of programming knowledge I've
         gathered independently, and finalizing my transition into the tech industry.
       </p>
     </section>
     <section class="logos-container">
-        <img src="imgs/logos.png" class="about-more-image img-left"  alt="js framework logos">
-      <p class="text-p text-right">
+        <img src="imgs/logos.png" class="about-more-image img-left small-pic"  alt="js framework logos" onmouseover="showText('text-7')">
+      <p class="text-p text-right" id="text-7">
         While Dev Bootcamp's curriculum seems to focus pretty heavily on Ruby and the
         Rails framework, I am also developing knowledge and skills with JavaScript web
         frameworks.
       </p>
     </section>
     <section>
-      <img src="imgs/droid.jpg" class="about-more-image img-right" alt="android logo">
-      <p class="text-p text-left">
+      <img src="imgs/droid.jpg" class="about-more-image img-right" alt="android logo" onmouseover="showText('text-8')">
+      <p class="text-p text-left" id="text-8">
         Also, I am still determined to realize my intial goal of making cool apps for my
-        phone, so I study Android and Java in my "spare time". Follow me on Twitter and
+        phone, so I study Android and Java in my "spare time". Follow me on <a target="_blank" href="https://twitter.com/EddieGdotme">Twitter</a> and
         I'll let you know when I make something cool.
       </p>
     </section>
+    <section>
+      <img src="imgs/bottle.png" class="about-more-image img-left" alt="android logo" onmouseover="showText('text-9')">
+      <p class="text-p text-left" id="text-9">
+        When I'm not hustling to prepare for my first job in the tech industry, I'm often with
+        my wife as we prepare for our first baby. Our small apartment keeps getting smaller
+        as we add a stroller and bassinet and toys and clothes.
+      </p>
+    </section>
 
-
-    <!-- <aside class="podcasts">
-      <h4>When I'm not writing code, I'm usually listening to podcasts. Here's a few of my favorites.</h4>
-      <ul>
-        <li><a href="">Start Up Podcast</a></li>
-        <li><a href="">JavaScript Jabber</a></li>
-        <li><a href="">Intelligence<sup>2</sup> (US and UK)</a></li>
-        <li><a href="">Crater Podcast</a></li>
-        <li><a href="">Fareed Zakariah, GPS</a></li>
-        <li><a href="">Sofware Engineering Daily</a></li>
-        <li><a href="">A16Z</a></li>
-        <li><a href="">Freakonomics Radio</a></li>
-      </ul>
-    </aside> -->
+    <script charset="utf-8" type="text/javascript">
+    function showText(id){
+      document.getElementById(id).style.display = "inline-block"
+    }
+    </script>
 
     <footer>
       <div id="social">
         <ul>
-          <li class="social-links-ul"><a href="https://www.linkedin.com/in/hedwardglenn">LinkedIn</a></li>
-          <li class="social-links-ul"><a href="https://github.com/glen0071">Github</a></li>
-          <li class="social-links-ul"><a href="https://twitter.com/EddieGdotme">Twitter</a></li>
-          <li class="social-links-ul"><a href="https://www.facebook.com/eddie.glenn.58">Facebook</a></li>
+          <li class="social-links-ul"><a href="https://www.linkedin.com/in/hedwardglenn" target="_blank">LinkedIn</a></li>
+          <li class="social-links-ul"><a href="https://github.com/glen0071" target="_blank">Github</a></li>
+          <li class="social-links-ul"><a href="https://twitter.com/EddieGdotme" target="_blank">Twitter</a></li>
+          <li class="social-links-ul"><a href="https://www.facebook.com/eddie.glenn.58" target="_blank">Facebook</a></li>
         </ul>
       </div>
 
@@ -115,6 +119,9 @@
         </p>
       </div>
     </footer>
+    <script>
+
+    </script>
 </body>
 
 </html>
