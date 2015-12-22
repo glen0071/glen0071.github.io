@@ -37,24 +37,28 @@
     </p>
 
     <p>
-      <code>
-        num = [1, 2, '3', 4, '5', '6']
-        puts "Before method is run: " + num.inspect
-        temp_array = []
-        num.each {|number|
-              int = number.to_i
-              temp_array << int
-        }
-        puts "After method is run: " +  temp_array.inspect
-      </code>
+      <pre>
+        <code>
+          num = [1, 2, '3', 4, '5', '6']
+          puts "Before method is run: " + num.inspect
+          temp_array = []
+          num.each {|number|
+                int = number.to_i
+                temp_array << int
+          }
+          puts "After method is run: " +  temp_array.inspect
+        </code>
+      </pre>
     </p>
 
     <p>
       Result: <br>
-      <code>
-        Before method is run: [1, 2, '3', 4, '5', '6']
-        After method is run: [1, 2, 3, 4, 5, 6]
-      </code>
+      <pre>
+        <code>
+          Before method is run: [1, 2, '3', 4, '5', '6']
+          After method is run: [1, 2, 3, 4, 5, 6]
+        </code>
+      </pre>
     </p>
 
     <p>
@@ -63,12 +67,14 @@
 
 
     <p>
-      <code>
-        num = [1, 2, '3', 4, '5', '6']
-        puts "Before method is run: " + num.inspect
-        array = num.map {|number| number.to_i}
-        puts "Before method is run: " + array.inspect
-      </code>
+      <pre>
+        <code>
+          num = [1, 2, '3', 4, '5', '6']
+          puts "Before method is run: " + num.inspect
+          array = num.map {|number| number.to_i}
+          puts "Before method is run: " + array.inspect
+        </code>
+      </pre>
     </p>
 
     <p>Cutting out a few lines of code is always a nice way to end a blog post.</p>
