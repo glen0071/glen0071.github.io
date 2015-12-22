@@ -27,7 +27,7 @@ header {
 
 .header-links {
   color: white;
-  font-size: 40px;
+  font-size: 3.2em;
   font-weight: 500;
 }
 
@@ -38,19 +38,16 @@ header {
 
 .home-link {
   position: absolute;
-  top: 15px;
   left: 10%;
 }
 
 .about-link {
   position: absolute;
-  top: 15px;
   left: 50%;
 }
 
 .blog-link {
   position: absolute;
-  top: 15px;
   left: 85%;
 }
 
@@ -88,24 +85,36 @@ td {
 }
 
 
-/* ------------------------------------ */
-/*               footer                 */
-/* ------------------------------------ */
+/*                  */
+/*     footer       */
+/*                  */
 
 footer {
   background-color: rgba(53, 210, 255, 1);
   color: white;
-  position: absolute;
-  bottom: -10px;
+  position: fixed;
+  bottom: 0px;
   width: 101%;
   margin: 10px -10px 0px -10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.3em;
+  height: 50px
+}
+
+.social {
+  position: absolute;
+  bottom: -20px;
+}
+
+.social-icons {
+  height: 35px;
 }
 
 #social-links-ul {
   list-style-type: none;
 }
 
-.social-links-ul {
+.social-links-li {
   display: inline;
 }
 
@@ -115,10 +124,6 @@ footer a {
 
 .farewell {
   position: absolute;
-  bottom: 3px;
-  right: 15px;
-}
-
-.contact-btn {
-  text-decoration: underline;
+  bottom: -20px;
+  right: 50px;
 }

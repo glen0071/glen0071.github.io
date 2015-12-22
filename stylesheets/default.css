@@ -32,7 +32,7 @@ header {
 
 .header-links {
   color: white;
-  font-size: 40px;
+  font-size: 3.2em;
   font-weight: 500;
 }
 
@@ -43,19 +43,16 @@ header {
 
 .home-link {
   position: absolute;
-  top: 15px;
   left: 10%;
 }
 
 .about-link {
   position: absolute;
-  top: 15px;
   left: 50%;
 }
 
 .blog-link {
   position: absolute;
-  top: 15px;
   left: 85%;
 }
 
@@ -65,14 +62,14 @@ header {
 
 main {
   position: relative;
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
 }
 
 .welcome-message {
-  width: 165px;
-  height: 165px;
-  margin: 30px;
+  width: 185px;
+  height: 185px;
+  margin: 10px;
 
   color: white;
   border-radius: 50%;
@@ -85,7 +82,7 @@ main {
   top: 0px;
   left: 0;
   background-color: rgba(53, 210, 255, 1);
-  font-size: 25px;
+  font-size: 2em;
 }
 
 .about {
@@ -93,14 +90,14 @@ main {
   top: 150px;
   left: 40%;
   background-color: rgba(53, 210, 255, 1);
-  font-size: 24px;
+  font-size: 1.9em;
 }
 
 .blog {
   position: absolute;
   top: 300px;
   left: 80%;
-  font-size: 23px;
+  font-size: 1.7em;
   background-color: rgba(53, 210, 255, 1);
   margin-bottom: 90px;
 }
@@ -113,24 +110,244 @@ main {
   display: block;
 }
 
-/* ---------------------- */
-/* ------- footer ------- */
-/* ---------------------- */
+/*                         */
+/*      media queries      */
+/*                         */
+
+@media screen and (max-width: 1000px) {
+  main {
+    position: relative;
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .about {
+    position: absolute;
+    top: 150px;
+    left: 37.5%;
+    background-color: rgba(53, 210, 255, 1);
+    font-size: 1.9em;
+  }
+
+  .blog {
+    position: absolute;
+    top: 300px;
+    left: 75%;
+    font-size: 1.7em;
+    margin-bottom: 90px;
+  }
+
+}
+
+@media screen and (max-width: 830px) {
+
+  main {
+    position: relative;
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .welcome-message {
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: table;
+  }
+
+  .welcome {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    font-size: 1.8em;
+  }
+
+  .about {
+    position: absolute;
+    top: 150px;
+    left: 35%;
+    font-size: 1.8em;
+  }
+
+  .blog {
+    position: absolute;
+    top: 300px;
+    left: 70%;
+    font-size: 1.6em;
+    margin-bottom: 90px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .home-link {
+    position: absolute;
+    left: 5%;
+  }
+
+  .about-link {
+    position: absolute;
+    left: 45%;
+  }
+
+  .blog-link {
+    position: absolute;
+    left: 80%;
+  }
+
+  main {
+    position: relative;
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .welcome {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    font-size: 1.8em;
+  }
+
+  .about {
+    position: absolute;
+    top: 175px;
+    left: 30%;
+    font-size: 1.8em;
+  }
+
+  .blog {
+    position: absolute;
+    top: 350px;
+    left: 60%;
+    font-size: 1.6em;
+    margin-bottom: 90px;
+  }
+
+
+}
+
+@media screen and (max-width: 540px) {
+  main {
+    position: relative;
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .welcome {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    font-size: 1.8em;
+  }
+
+  .about {
+    position: absolute;
+    top: 175px;
+    left: 25%;
+    font-size: 1.8em;
+  }
+
+  .blog {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    font-size: 1.6em;
+    margin-bottom: 90px;
+  }
+
+
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    position: relative;
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .welcome {
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    font-size: 1.8em;
+  }
+
+  .about {
+    position: absolute;
+    top: 175px;
+    left: 15%;
+    font-size: 1.8em;
+  }
+
+  .blog {
+    position: absolute;
+    top: 350px;
+    left: 35%;
+    font-size: 1.7em;
+    margin-bottom: 90px;
+  }
+
+
+}
+
+@media only screen and (max-width: 400px){
+
+  .header-links {
+    color: white;
+    font-size: 3em;
+    font-weight: 500;
+  }
+
+  .home-link {
+    position: absolute;
+    left: 5%;
+  }
+
+  .about-link {
+    position: absolute;
+    left: 37.5%;
+  }
+
+  .blog-link {
+    position: absolute;
+    left: 75%;
+  }
+
+}
+
+/*                  */
+/*     footer       */
+/*                  */
 
 footer {
   background-color: rgba(53, 210, 255, 1);
   color: white;
   position: fixed;
   bottom: 0px;
-  width: 100%;
+  width: 101%;
   margin: 10px -10px 0px -10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.3em;
+  height: 50px
+}
+
+.social {
+  position: absolute;
+  bottom: -20px;
+}
+
+.social-icons {
+  height: 35px;
 }
 
 #social-links-ul {
   list-style-type: none;
 }
 
-.social-links-ul {
+.social-links-li {
   display: inline;
 }
 
@@ -140,6 +357,6 @@ footer a {
 
 .farewell {
   position: absolute;
-  bottom: 3px;
+  bottom: -20px;
   right: 50px;
 }
