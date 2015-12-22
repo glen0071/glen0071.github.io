@@ -115,21 +115,21 @@ header {
 .basic-me-text {
   border: 3px solid rgba(53, 210, 255, 1);
   height: auto;
-  width: 200px;
+  width: 250px;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.7em;
   float: left;
   position: relative;
   top: 400px;
-  left: 80px;
+  left: 10px;
 }
 
 .window-text {
   border: 3px solid rgba(53, 210, 255, 1);
   height: auto;
-  width: 200px;
+  width: 250px;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.7em;
   float: right;
   position: relative;
   top: 400px;
@@ -164,6 +164,7 @@ aside.audios {
 p.invite-more-about {
   float: right;
   padding-right: 30px;
+  font-size: 1.2em;
 }
 
 p.invite-more-about a {

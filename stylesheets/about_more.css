@@ -62,6 +62,7 @@ header {
 
 h4.instruct {
   padding: 20px 40px;
+  font-size: 1.1em;
 }
 
 section {
@@ -86,18 +87,25 @@ section.dbc-sec {
   display: none;
   height: 100px;
   width: 300px;
+  font-size: 1.3em;
 }
 
 .img-left {
   float: left;
   margin-left: auto;
   margin-right: 0px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .img-right {
   float: right;
   margin-left: auto;
   margin-right: 0px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .text-p {
@@ -142,33 +150,6 @@ section.logos-container {
   top: 50%;
   transform: translateY(-50%);
 }
-
-.small-pic {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/*
-.about-sec {
-  position: relative;
-  height: 650px;
-  width: 800px;
-}*/
-
-/*.about-sec-1 {
-  float: right;
-}*/
-
-/*.about-sec-3 {
-  clear: both;
-  background-color: blue;
-}*/
-
-/*.about-sec-2 {
-  float: left;
-}*/
-
 
 /*                  */
 /*     footer       */
