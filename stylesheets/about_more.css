@@ -45,7 +45,12 @@ header {
 
 .about-link {
   position: absolute;
-  left: 50%;
+  left: 35%;
+}
+
+.projects-link {
+  position: absolute;
+  left: 60%;
 }
 
 .blog-link {

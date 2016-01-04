@@ -7,6 +7,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+html {
+  margin-bottom: 80px;
+}
+
 a {
   text-decoration: none;
 }
@@ -94,6 +98,56 @@ code {
 
 article {
   margin-bottom: 100px;
+}
+
+.project-section {
+  width: 80%;
+  margin: 10px auto;
+  height: 300px;
+  border: 3px solid rgba(53, 210, 255, 1);
+
+}
+
+.old-design-pic {
+  width: 500px;
+  float: right;
+  margin-right: 15px;
+  box-shadow: 10px 10px 5px #888888;
+  position: relative;
+  top: 20px;
+}
+
+.old-design-pic-2 {
+  top: -215px;
+  right: -40px;
+  border: solid thin gray;
+}
+
+.project-text {
+  width: 400px;
+  margin: 15px;
+  display: inline-block;
+}
+
+.projects-index-pic {
+  width: 300px;
+  float: left;
+  margin: 20px;
+}
+
+.projects-index-text {
+  float: right;
+  height: 100px;
+  width: 300px;
+  font-size: 1.2em;
+}
+
+.audios {
+  clear: both;
+}
+
+.project-li {
+  width: 700px;
 }
 
 /*                  */
