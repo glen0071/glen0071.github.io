@@ -1,0 +1,140 @@
+/* ---------------------- */
+/* ----- entire doc ----- */
+/* ---------------------- */
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----------------------------- */
+/* ------------ header  -------- */
+/* ----------------------------- */
+
+header {
+  width: auto;
+  height: 70px;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: rgba(53, 210, 255, 1);
+  margin: -10px -10px 0 -10px;
+}
+
+.header-links {
+  color: white;
+  font-size: 3.2em;
+  font-weight: 500;
+}
+
+.header-nav-li {
+  display: inline;
+  padding: 0px 10px;
+}
+
+.home-link {
+  position: absolute;
+  left: 10%;
+}
+
+.about-link {
+  position: absolute;
+  left: 50%;
+}
+
+.blog-link {
+  position: absolute;
+  left: 85%;
+}
+
+/* ----------------------------- */
+/* ------------ main  ---------- */
+/* ----------------------------- */
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.blog-post-ul {
+  list-style-type: none;
+}
+
+.one-post-li {
+  margin-bottom: 10px;
+}
+
+.post-title-link {
+  display: block;
+  font-size: 1.8em;
+  text-indent: 10px;
+  margin: 5px; 0;
+}
+
+.post-summary {
+  padding-left: 40px;
+}
+
+span.bold-text {
+  font-weight: bold;
+}
+
+.audios {
+  padding: 5px;
+}
+
+code {
+  font-weight: bold;
+  color: red;
+  font-size: 1.1em;
+}
+
+article {
+  margin-bottom: 100px;
+}
+
+/*                  */
+/*     footer       */
+/*                  */
+
+footer {
+  background-color: rgba(53, 210, 255, 1);
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 101%;
+  margin: 10px -10px 0px -10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.3em;
+  height: 50px
+}
+
+.social {
+  position: absolute;
+  bottom: -20px;
+}
+
+.social-icons {
+  height: 35px;
+}
+
+#social-links-ul {
+  list-style-type: none;
+}
+
+.social-links-li {
+  display: inline;
+}
+
+footer a {
+  color: white;
+}
+
+.farewell {
+  position: absolute;
+  bottom: -20px;
+  right: 50px;
+}
