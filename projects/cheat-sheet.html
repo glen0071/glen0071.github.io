@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Eddie</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="assets/projects.css">
+</head>
+
+<body>
+  <header>
+    <div id="top-left-logo"></div>
+    <nav>
+      <span class="header-nav-li"><a class="home-link header-links" href="../index.html">Home</a></span>
+      <span class="header-nav-li"><a class="about-link header-links" href="../about.html">About</a></span>
+      <span class="header-nav-li"><a class="projects-link header-links" href="project-index.html">Projects</a></span>
+      <span class="header-nav-li"><a class="blog-link header-links" href="../blog/blog-index.html">Blog</a></span>
+    </nav>
+  </header>
+  <main>
+
+
+    <h2>
+      Cheat Sheet
+    </h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Function</th>
+          <th>Ruby Syntax</th>
+          <th>JavaScrip Syntaxt</th>
+          <th>Return</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Declare a variable</td>
+          <td>
+            <pre>
+              <code>
+variable
+              </code>
+            </pre>
+          </td>
+          <td>
+            <pre>
+              <code>
+var variable;
+              </code>
+            </pre>
+          </td>
+          <td>a local variable</td>
+        </tr>
+        <tr>
+          <td>Declare an Array literal</td>
+          <td>
+            <pre>
+              <code>
+arr = []
+                </code>
+            </pre>
+          </td>
+          <td>
+            <pre>
+              <code>
+var arr = [];
+              </code>
+            </pre>
+          </td>
+          <td>
+            a local variable
+          </td>
+        </tr>
+
+        <tr>
+          <td>Basic for loop</td>
+          <td>
+            <pre>
+              <code>
+for i in 0..5
+   if i > 2 then
+      break
+   end
+   puts "Value of local variable is #{i}"
+end
+              </code>
+            </pre>
+          </td>
+          <td>
+            <pre>
+              <code>
+for (i = 0; i < cars.length; i++) {
+    text += cars[i] + "<br>";
+}
+              </code>
+            </pre>
+          </td>
+          <td>Results</td>
+        </tr>
+
+
+        <tr>
+          <td>Iterate through an array (non-destructive)</td>
+          <td>
+            <pre>
+              <code>
+arr.each do |element|
+  // code block goes here
+end
+              </code>
+            </pre>
+          </td>
+          <td>
+            <pre>
+              <code>
+arr.forEach {
+  // code block goes here
+}
+              </code>
+            </pre>
+          </td>
+          <td>Results</td>
+        </tr>
+
+
+        <tr>
+          <td>Iterate through an array (non-destructive)</td>
+          <td>
+            <pre>
+              <code>
+arr.each do |element| end
+              </code>
+            </pre>
+          </td>
+          <td>
+            <pre>
+              <code>
+arr.forEach {}
+              </code>
+            </pre>
+          </td>
+          <td>Results</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    </table>
+
+    <footer>
+      <div id="social" class="social">
+        <ul>
+          <li class="social-links-li">
+            <a href="https://www.linkedin.com/in/hedwardglenn" target="_blank">
+              <img src="../imgs/linkedin.png" alt="linkedin icon" class="social-icons" />
+            </a>
+          </li>
+          <li class="social-links-li">
+            <a href="https://github.com/glen0071" target="_blank">
+              <img src="../imgs/github.png" alt="github icon" class="social-icons">
+            </a>
+          </li>
+          <li class="social-links-li">
+            <a href="https://twitter.com/EddieGdotme" target="_blank">
+              <img src="../imgs/twitter.png" alt="twitter icon" class="social-icons">
+            </a>
+          </li>
+          <li class="social-links-li">
+            <a href="https://www.facebook.com/eddie.glenn.58" target="_blank">
+              <img src="../imgs/facebook.png" alt="facebook icon" class="social-icons">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="farewell">
+        <p>
+          <a href="mailto:glen0071@gmail.com?Subject=Hello%20from%20your%20website" class="contact-btn">
+            <img src="../imgs/mail.png" alt="email icon" class="social-icons" />
+          </a>
+        </p>
+      </div>
+    </footer>
+</body>
+
+</html>
