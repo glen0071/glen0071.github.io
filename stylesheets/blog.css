@@ -104,6 +104,11 @@ a {
   color: blue;
 }
 
+.ioft-pic {
+  float: right;
+  width: 300px;
+}
+
 /*                  */
 /*     footer       */
 /*                  */
