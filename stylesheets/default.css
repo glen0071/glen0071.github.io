@@ -215,30 +215,23 @@ main {
     font-size: 1.6em;
     margin-bottom: 90px;
   }
-
-
 }
 
 @media screen and (max-width: 580px) {
-
   header {
     height: 65px;
   }
-
   .header-links {
     color: white;
     font-size: 2.9em;
     font-weight: 500;
   }
-
 }
 
 @media screen and (max-width: 540px) {
-
   header {
     height: 60px;
   }
-
   .header-links {
     color: white;
     font-size: 2.5em;
@@ -272,14 +265,12 @@ main {
     font-size: 1.6em;
     margin-bottom: 90px;
   }
-
-
 }
 
 @media screen and (max-width: 450px) {
 
   header {
-    height: 55px;
+    height: 50px;
   }
 
   .header-links {
@@ -287,12 +278,6 @@ main {
     font-size: 2.2em;
     font-weight: 500;
   }
-
-  /*main {
-    position: relative;
-    width: 100%;
-    margin: 10px auto;
-  }*/
 
   .welcome {
     position: absolute;
@@ -320,31 +305,25 @@ main {
 }
 
 @media only screen and (max-width: 400px){
-
   header {
-    height: 50px;
+    height: 40px;
   }
-
   .header-links {
     color: white;
     font-size: 1.7em;
     font-weight: 500;
   }
-
 }
 
 @media only screen and (max-width: 370px){
-
   header {
     height: 35px;
   }
-
   .header-links {
     color: white;
     font-size: 1.5em;
     font-weight: 500;
   }
-
 }
 
 /*                  */
