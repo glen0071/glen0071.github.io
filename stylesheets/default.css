@@ -188,21 +188,6 @@ main {
 
 @media screen and (max-width: 700px) {
 
-  .home-link {
-    position: absolute;
-    left: 5%;
-  }
-
-  .about-link {
-    position: absolute;
-    left: 45%;
-  }
-
-  .blog-link {
-    position: absolute;
-    left: 80%;
-  }
-
   main {
     position: relative;
     width: 100%;
@@ -234,7 +219,32 @@ main {
 
 }
 
+@media screen and (max-width: 580px) {
+
+  header {
+    height: 65px;
+  }
+
+  .header-links {
+    color: white;
+    font-size: 2.9em;
+    font-weight: 500;
+  }
+
+}
+
 @media screen and (max-width: 540px) {
+
+  header {
+    height: 60px;
+  }
+
+  .header-links {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+
   main {
     position: relative;
     width: 100%;
@@ -267,6 +277,17 @@ main {
 }
 
 @media screen and (max-width: 450px) {
+
+  header {
+    height: 55px;
+  }
+
+  .header-links {
+    color: white;
+    font-size: 2.2em;
+    font-weight: 500;
+  }
+
   main {
     position: relative;
     width: 100%;
@@ -300,25 +321,14 @@ main {
 
 @media only screen and (max-width: 400px){
 
+  header {
+    height: 50px;
+  }
+
   .header-links {
     color: white;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 500;
-  }
-
-  .home-link {
-    position: absolute;
-    left: 5%;
-  }
-
-  .about-link {
-    position: absolute;
-    left: 37.5%;
-  }
-
-  .blog-link {
-    position: absolute;
-    left: 75%;
   }
 
 }
