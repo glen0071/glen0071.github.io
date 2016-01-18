@@ -6,58 +6,82 @@
 body {font-family: 'Roboto', sans-serif;}
 
 /* ----------------------------- */
+/* ------- project files  ------ */
 /* ------------ main  ---------- */
 /* ----------------------------- */
+
+ul {
+  list-style-type: none;
+}
+
+/* ----------------------------- */
+/* ------- project index  ------ */
+/* ------------ main  ---------- */
+/* ----------------------------- */
+
+.project-index-container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+
+.projects-index-pic {
+  width: 300px;
+  margin: 20px;
+}
 
 main {
   width: 100%;
   margin: 0 auto;
 }
 
-.blog-post-ul {
-  list-style-type: none;
-}
-
-.one-post-li {
-  margin-bottom: 10px;
-}
-
-.post-title-link {
-  display: block;
-  font-size: 1.8em;
-  text-indent: 10px;
-  margin: 5px; 0;
-}
-
-.post-summary {
-  padding-left: 40px;
-}
-
-span.bold-text {
-  font-weight: bold;
+.project-li {
+  width: 700px;
 }
 
 .audios {
   padding: 5px;
 }
 
-code {
-  font-weight: bold;
-  color: red;
-  font-size: 1.1em;
+/* ----------------------------- */
+/* ------- responsive  ------ */
+/* ------- project index  ------ */
+/* ------------ main  ---------- */
+/* ----------------------------- */
+
+.project-index-container {
+  width: 80%;
+  margin: 0px auto;
 }
 
-article {
-  margin-bottom: 100px;
-}
+
+/* ----------------------------- */
+/* ------- single project  ----- */
+/* -------- main  -------------- */
+/* ----------------------------- */
 
 .project-section {
   width: 80%;
   margin: 10px auto;
   height: 300px;
   border: 3px solid rgba(53, 210, 255, 1);
-
 }
+
+.project-text {
+  width: 400px;
+  margin: 15px;
+  display: inline-block;
+}
+
+.audios {
+  clear: both;
+}
+
+/* ----------------------------- */
+/* ------- this site  ---------- */
+/* -------- main  -------------- */
+/* ----------------------------- */
+
 
 .old-design-pic {
   width: 500px;
@@ -74,33 +98,9 @@ article {
   border: solid thin gray;
 }
 
-.project-text {
-  width: 400px;
-  margin: 15px;
-  display: inline-block;
-}
-
-.projects-index-pic {
-  width: 300px;
-  float: left;
-  margin: 20px;
-}
-
 .projects-index-text {
   float: right;
   height: 100px;
   width: 300px;
   font-size: 1.2em;
-}
-
-.audios {
-  clear: both;
-}
-
-.project-li {
-  width: 700px;
-}
-
-table, th, td {
-   border: 1px solid black;
 }

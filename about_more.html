@@ -3,6 +3,7 @@
 
 <head>
   <title>Eddie G - Design</title>
+  <meta name="viewport" content="width=device-width">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -22,86 +23,92 @@
   </header>
   <main class="about">
 
-    <h4 class="instruct">Touch or point your cursor at one of the pics below to learn a bit more about me...</h4>
+    <h4 class="instructions">Touch or point your cursor at one of the pics below to learn a bit more about me...</h4>
 
-    <section>
-      <img src="imgs/mn.png" class="about-more-image img-left" alt="Minnesota" onmouseover="showText('text-1')">
-      <p class="text-p text-right" id="text-1">
-        I grew up in Duluth, Minnesota, and then attended college and law school in the
-        Twin Cities.
-      </p>
-    </section>
-
-    <section>
-      <img src="imgs/il.png" class="about-more-image img-right" alt="Illinois" onmouseover="showText('text-2')">
-      <p class="text-p text-left" id="text-2">
+    <ul class="about-more-ul">
+      <li class="about-more-li">
+        <img src="imgs/mn.png" class="about-more-image img-left" alt="Minnesota" onmouseover="showText('text-1')">
+      </li>
+      <li class="about-more-li">
+        <p class="text-p text-right" id="text-1">
+          I grew up in Duluth, Minnesota, and then attended college and law school in the
+          Twin Cities.
+        </p>
+      </li>
+      <li class="about-more-li"><img src="imgs/il.png" class="about-more-image img-right" alt="Illinois" onmouseover="showText('text-2')"></li>
+      <li class="about-more-li"><p class="text-p text-left" id="text-2">
         I came to Chicago in 2012 for a job at a non-profit.
-      </p>
-    </section>
-
-    <section>
-      <img src="imgs/lawstuff.jpg" class="about-more-image img-left" alt="gavel and law books" onmouseover="showText('text-3')">
-      <p class="text-p text-right" id="text-3">
-        I did a mix of legal and consulting work, working with stakeholders acros the country.
-        You can <a href="assets/Eddie_Glenn_Resume.pdf" download>download</a> my resume if you want to know more about that. That job was very fulfilling, and
-        I had planned on devoting my career to that type of work. That was until I started coding...
-      </p>
-    </section>
-    <section>
-      <img src="imgs/sinkapp.png" class="about-more-image img-right" alt="wrench pic in iphone" onmouseover="showText('text-4')">
-      <p class="text-p text-left" id="text-4">
-        In the beginning, I didn't plan on becoming a developer. I just wanted to make my own apps.
-        I thought to myself, "I've unclogged sinks and replaced brake pads with
-        Google searches and Youtube videos. How hard can it be to make an app?"
-      </p>
-    </section>
-    <section>
-      <img src="imgs/night.png" class="about-more-image img-left" alt="man on computer at night" onmouseover="showText('text-5')">
-      <p class="text-p text-right" id="text-5">
-        Without any clear plans in mind, I started coding and quickly fell in
-        love with it. I had already enjoyed creative writing, but developing software
-        expressed a new form of creativity for me. I ended up spending countless hours alone
-        in front of the computer after my wife went to bed.
-      </p>
-    </section>
-
-    <section class="dbc-sec">
-      <img src="imgs/dbc-logo.png" class="about-more-image img-right dbc-logo " alt="reactjs logo" onmouseover="showText('text-6')">
-      <p class="text-p text-left" id="text-6">
-        Now, I'm at Dev Bootcamp, weaving together the strands of programming knowledge I've
-        gathered independently, and finalizing my transition into the tech industry.
-      </p>
-    </section>
-    <section class="logos-container">
-        <img src="imgs/logos.png" class="about-more-image img-left "  alt="js framework logos" onmouseover="showText('text-7')">
-      <p class="text-p text-right" id="text-7">
-        While Dev Bootcamp's curriculum is focused on Ruby on Rails, I have also studied JavaScript.
-        I am intrigued by how it plays a unique role in bringing life and interaction to the web
-        and how that puts JavaScript in a prime position to be used in programming for
-        an increasingly interconnected world.
-      </p>
-    </section>
-    <section>
-      <img src="imgs/droid.jpg" class="about-more-image img-right" alt="android logo" onmouseover="showText('text-8')">
-      <p class="text-p text-left" id="text-8">
+      </p></li>
+      <li class="about-more-li">
+        <img src="imgs/lawstuff.jpg" class="about-more-image img-left" alt="gavel and law books" onmouseover="showText('text-3')">
+      </li>
+      <li class="about-more-li">
+        <p class="text-p text-right" id="text-3">
+          I did a mix of legal and consulting work, working with stakeholders acros the country.
+          You can <a href="assets/Eddie_Glenn_Resume.pdf" download>download</a> my resume if you want to know more about that. That job was very fulfilling, and
+          I had planned on devoting my career to that type of work. That was until I started coding...
+        </p>
+      </li>
+      <li class="about-more-li">
+        <img src="imgs/sinkapp.png" class="about-more-image img-right" alt="wrench pic in iphone" onmouseover="showText('text-4')">
+      </li>
+      <li class="about-more-li">
+        <p class="text-p text-left" id="text-4">
+          In the beginning, I didn't plan on becoming a developer. I just wanted to make my own apps.
+          I thought to myself, "I've unclogged sinks and replaced brake pads with
+          Google searches and Youtube videos. How hard can it be to make an app?"
+        </p>
+      </li>
+      <li class="about-more-li">
+        <img src="imgs/night.png" class="about-more-image img-left" alt="man on computer at night" onmouseover="showText('text-5')">
+      </li>
+      <li class="about-more-li">
+        <p class="text-p text-right" id="text-5">
+          Without any clear plans in mind, I started coding and quickly fell in
+          love with it. I had already enjoyed creative writing, but developing software
+          expressed a new form of creativity for me. I ended up spending countless hours alone
+          in front of the computer after my wife went to bed.
+        </p>
+      </li>
+      <li class="about-more-li">
+        <img src="imgs/dbc-logo.png" class="about-more-image img-right dbc-logo " alt="reactjs logo" onmouseover="showText('text-6')">
+      </li>
+      <li class="about-more-li">
+        <p class="text-p text-left" id="text-6">
+          Now, I'm at Dev Bootcamp, weaving together the strands of programming knowledge I've
+          gathered independently, and finalizing my transition into the tech industry.
+        </p>
+      </li>
+      <li class="about-more-li"><img src="imgs/logos.png" class="about-more-image img-left "  alt="js framework logos" onmouseover="showText('text-7')"></li>
+      <li class="about-more-li">
+        <p class="text-p text-right" id="text-7">
+          While Dev Bootcamp's curriculum is focused on Ruby on Rails, I have also studied JavaScript.
+          I am intrigued by how it plays a unique role in bringing life and interaction to the web
+          and how that puts JavaScript in a prime position to be used in programming for
+          an increasingly interconnected world.
+        </p>
+      </li>
+      <li class="about-more-li"><img src="imgs/droid.jpg" class="about-more-image img-right" alt="android logo" onmouseover="showText('text-8')"></li>
+      <li class="about-more-li"> <p class="text-p text-left" id="text-8">
         Also, I am still moving towards my intial goal of making cool apps for my
         phone, so I study Android and Java in my "spare time". Follow me on <a target="_blank" href="https://twitter.com/EddieGdotme">Twitter</a>
         or at one of the social links below if you want to find out when I make something cool.
-      </p>
-    </section>
-    <section>
-      <img src="imgs/bottle.png" class="about-more-image img-left" alt="android logo" onmouseover="showText('text-9')">
-      <p class="text-p text-right" id="text-9">
-        When I'm not hustling to prepare for my next job in the tech industry, I'm usually with
-        my wife preparing for our baby who will arrive in January!
-      </p>
-    </section>
+      </p></li>
+      <li class="about-more-li"><img src="imgs/bottle.png" class="about-more-image img-left" alt="android logo" onmouseover="showText('text-9')"></li>
+      <li class="about-more-li">
+        <p class="text-p text-right" id="text-9">
+          When I'm not preparing for my next job in the tech industry, I'm usually with
+          my wife preparing for our baby who will arrive in January!
+        </p>
+      </li>
+    </ul>
 
     <script charset="utf-8" type="text/javascript">
     function showText(id){
-      document.getElementById(id).style.display = "inline-block"
+      document.getElementById(id).style.visibility = "visible"
     }
     </script>
+  </main>
 
     <footer>
       <div id="social" class="social">

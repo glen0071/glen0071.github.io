@@ -9,17 +9,13 @@ body {font-family: 'Roboto', sans-serif;}
 /*     main         */
 /*                  */
 
-h4.instruct {
+.about-more-ul {padding: 0px}
+.about-more-li {list-style-type: none; width: 100%; text-align: center; margin: 10px 0px}
+.text-p {margin: 0px auto;}
+
+h4.instructions {
   padding: 20px 40px;
   font-size: 1.1em;
-}
-
-section {
-  display: block;
-  max-width: 700px;
-  height: 350px;
-  margin: 0px auto;
-  clear: both;
 }
 
 section.dbc-sec {
@@ -29,73 +25,35 @@ section.dbc-sec {
 .about-more-image {
   max-height: 300px;
   max-width: 300px;
-  display: inline;
 }
 
 .text-p {
-  display: none;
+  visibility: hidden;
   height: 100px;
   width: 300px;
   font-size: 1.3em;
 }
 
-.img-left {
-  float: left;
-  margin-left: auto;
-  margin-right: 0px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.img-right {
-  float: right;
-  margin-left: auto;
-  margin-right: 0px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .text-p {
   border: 3px solid rgba(53, 210, 255, 1);
   height: auto;
-  padding: 3px;
-}
-
-.text-right {
-  float: right;
-  margin-right: auto;
-}
-
-.text-left {
-  float: left;
-  margin-left: auto;
 }
 
 .logos-container {
   text-align: center;
 }
 
-section.logos-container {
-  width: 1000px;
-}
-
-.logos-div {
-  float: left;
-  margin-left: auto;
-  margin-right: 0px;
-  display: inline-block;
-}
-
 .logos {
-  display: inline-block;
-  margin: 0;
   height: 150px;
 }
 
-.text-right, .text-left {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+@media screen and (min-width: 500px) {
+  .img-left {
+    position: relative;
+    right: 15%;
+  }
+  .img-right {
+    position: relative;
+    left: 15%;
+  }
 }

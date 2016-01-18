@@ -4,115 +4,72 @@
 /*                        */
 
 body {font-family: 'Roboto', sans-serif;}
+main ul {list-style-type: none; padding: 0px;}
 
 /*                  */
 /*     main         */
 /*                  */
 
-
-.about-sec {
-  position: relative;
-  height: 650px;
-  width: 800px;
+main.about {
+  text-align: center;
 }
 
-.about-sec-1 {
-  float: right;
-}
-
-.about-sec-3 {
+ul, .invite-more-about {
   clear: both;
-  background-color: blue;
 }
-
-.about-sec-2 {
-  float: left;
-}
-
 
 /*                  */
 /*     main imgs    */
 /*                  */
 
+.window-img {float: left;}
+.desk-img {float: right;}
 
-
-.desk-img, .window-img {
+.featured-pics {
   height: 600px;
   width: auto;
+  max-width: 100%;
   margin: 15px;
-}
-
-.how-img {
-  height: 300px;
-  width: auto;
-  margin: 15px;
-}
-
-.desk-img {
-  float: right;
-}
-
-.window-img {
-  float: left;
 }
 
 /*                  */
 /*     main text    */
 /*                  */
 
-.basic-me-text {
+.about-text {
   border: 3px solid rgba(53, 210, 255, 1);
   height: auto;
   width: 250px;
   text-align: center;
-  font-size: 1.7em;
-  float: left;
-  position: relative;
-  top: 400px;
-  left: 10px;
+  font-size: 2em;
+  display: inline-block;
 }
 
-.window-text {
-  border: 3px solid rgba(53, 210, 255, 1);
-  height: auto;
-  width: 250px;
-  text-align: center;
-  font-size: 1.7em;
-  float: right;
-  position: relative;
-  top: 400px;
-  right: 0;
+@media screen and (min-width: 750px) {
+  .about-text {
+    position: relative;
+    top: 350px;
+  }
 }
+.about-text {position: relative;}
+@media screen and (min-width: 1200px) {.basic-me-text {left: 20%;}.window-text {right: 20%;}}@media screen and (min-width: 1100px) {.basic-me-text {left: 16%;}.window-text {right: 16%;}}
+@media screen and (min-width: 1000px) {.basic-me-text {left: 13%;}.window-text {right: 13%;}}
+@media screen and (min-width: 900px) {.basic-me-text {left: 9%;}.window-text {right: 9%;}}
 
-
-.how-text {
-  border: 3px solid rgba(53, 210, 255, 1);
-  height: auto;
-  width: 500px;
-  text-align: center;
-  font-size: 22px;
-  float: right;
-  position: relative;
-  left: 100px;
+@media screen and (max-width: 500px) {
+  .featured-pics {
+    margin: 0px;
+  }
 }
-
-section.about-pro {
-  clear: both;
-}
-
 
 /*                  */
 /*     asides       */
 /*                  */
 
-aside.audios {
-  clear: both;
-}
-
 p.invite-more-about {
-  float: right;
-  padding-right: 30px;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  text-align: right;
+  padding: 50px;
 }
 
 p.invite-more-about a {
